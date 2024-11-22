@@ -18,17 +18,15 @@
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">
         <div class="typeCont">
-            <div class="card text-white bg-danger m-3 conversionType">
-                <a href="./temperature.html">
-                    <div class="card-header text-center">Température</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_temperature.png" />
-                        </div>
+            <div class="card text-white bg-danger m-3 conversionType active">
+                <div class="card-header text-center">Température</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_temperature.png" />
                     </div>
-                </a>
+                </div>
             </div>
-    <!------------------------ VOLUME ------------------------->
+            <!------------------------ VOLUME ------------------------->
             <div class="card text-white bg-warning m-3 conversionType">
                 <a href="./volume.html">
                     <div class="card-header text-center">Volume</div>
@@ -39,7 +37,7 @@
                     </div>
                 </a>
             </div>
-    <!----------------------- DISTANCE ------------------------>
+            <!----------------------- DISTANCE ------------------------>
             <div class="card text-white bg-success m-3 conversionType">
                 <a href="./distance.html">
                     <div class="card-header text-center">Distance</div>
@@ -50,7 +48,7 @@
                     </div>
                 </a>
             </div>
-    <!----------------------- DONNÉES ------------------------>
+            <!----------------------- DONNÉES ------------------------>
             <div class="card text-white bg-info m-3 conversionType">
                 <a href="./donnees.html">
                     <div class="card-header text-center">Données</div>
@@ -61,7 +59,7 @@
                     </div>
                 </a>
             </div>
-    <!------------------------ MASSE ------------------------->
+            <!------------------------ MASSE ------------------------->
             <div class="card text-white bg-success m-3 conversionType">
                 <a href="./masse.html">
                     <div class="card-header text-center">Masse</div>
@@ -72,7 +70,7 @@
                     </div>
                 </a>
             </div>
-    <!---------------------- SUPERFICIE ----------------------->
+            <!---------------------- SUPERFICIE ----------------------->
             <div class="card text-white bg-info m-3 conversionType">
                 <a href="./superficie.html">
                     <div class="card-header text-center">Superficie</div>
@@ -83,7 +81,7 @@
                     </div>
                 </a>
             </div>
-    <!----------------------- VITESSE ------------------------>
+            <!----------------------- VITESSE ------------------------>
             <div class="card text-white bg-danger m-3 conversionType">
                 <a href="./vitesse.html">
                     <div class="card-header text-center">Vitesse</div>
@@ -94,7 +92,7 @@
                     </div>
                 </a>
             </div>
-    <!------------------------ TEMPS ------------------------->
+            <!------------------------ TEMPS ------------------------->
             <div class="card text-white bg-warning m-3 conversionType">
                 <a href="./temps.html">
                     <div class="card-header text-center">Temps</div>
@@ -105,7 +103,7 @@
                     </div>
                 </a>
             </div>
-    <!---------------------- FREQUENCE ----------------------->
+            <!---------------------- FREQUENCE ----------------------->
             <div class="card text-white bg-info m-3 conversionType">
                 <a href="./frequence.html">
                     <div class="card-header text-center">Fréquence</div>
@@ -116,7 +114,7 @@
                     </div>
                 </a>
             </div>
-    <!---------------------- PRESSION ----------------------->
+            <!---------------------- PRESSION ----------------------->
             <div class="card text-white bg-success m-3 conversionType">
                 <a href="./pression.html">
                     <div class="card-header text-center">Pression</div>
@@ -127,7 +125,7 @@
                     </div>
                 </a>
             </div>
-    <!---------------------- ÉNERGIE ----------------------->
+            <!---------------------- ÉNERGIE ----------------------->
             <div class="card text-white bg-warning m-3 conversionType">
                 <a href="./energie.html">
                     <div class="card-header text-center">Énergie</div>
@@ -138,7 +136,7 @@
                     </div>
                 </a>
             </div>
-    <!---------------------- MONNAIE ----------------------->
+            <!---------------------- MONNAIE ----------------------->
             <div class="card text-white bg-danger m-3 conversionType">
                 <a href="./monnaie.html">
                     <div class="card-header text-center">Monnaie</div>
@@ -148,6 +146,41 @@
                         </div>
                     </div>
                 </a>
+            </div>
+        </div>
+        <!---------------------- CONVERTISSEUR ----------------------->
+        <div class="conversionCont">
+            <div class="valueField">
+                <label class="col-form-label mt-2" for="valueInput">Résultat :</label>
+                <input type="text" class="form-control" readonly id="valueInput">
+            </div>
+            <div class="valueField">
+                <label class="col-form-label mt-4" for="valueInput">Valeur à convertir :</label>
+                <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
+            </div>
+            <div class="mb-5 units">
+                <div>
+                    <label for="unitBaseTempSelect" class="form-label mt-3">De :</label>
+                    <select class="form-select" id="unitBaseSelect">
+                        <option value="celsius">Celsius °C</option>
+                        <option value="fahrenheit">Fahrenheit °F</option>
+                        <option value="kelvin">Kelvin K</option>
+                        <option value="reaumur">Reaumur °Ré</option>
+                        <option value="newton">Newton °N</option>
+                        <option value="rankine">Rankine °Ra</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="unitConvTempSelect" class="form-label mt-3">À :</label>
+                    <select class="form-select" id="unitConvSelect">
+                        <option value="celsius">Celsius °C</option>
+                        <option value="fahrenheit">Fahrenheit °F</option>
+                        <option value="kelvin">Kelvin K</option>
+                        <option value="reaumur">Reaumur °Ré</option>
+                        <option value="newton">Newton °N</option>
+                        <option value="rankine">Rankine °Ra</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>

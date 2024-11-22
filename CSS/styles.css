@@ -1,0 +1,88 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: solid white 1px;
+}
+
+.mainSection {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainPadding {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card.conversionType {
+    width: 200px;
+    height: 150px;
+}
+
+.card:hover,
+.card.active {
+    border: solid white 3px;
+}
+
+.cardImage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.typeCont {
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.conversionCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.valueField {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.units {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 10px 20px;
+    background-color: #615e5e;
+    align-items: flex-start;
+}
+
+.headerImage {
+    width: 100%;
+}
+
+.image {
+    max-height: 75px;
+    max-width: 100%;
+}
+
+.icon {
+    height: 16px;
+}
