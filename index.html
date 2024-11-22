@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet final - Valérie Gouin et Matisse Pageau</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img class="headerImage" src="./images/image_entete.png" />
+    </div>
+    <div class="mainSection mainPadding">
+        <div class="firstLine">
+            <div class="card text-white bg-success mb-3" style="width: 15rem;">
+                <div class="card-header text-center">Température</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_temperature.png" />
+                    </div>
+                    <div>
+                        <label class="col-form-label mt-4" for="valueInput">Valeur à convertir :</label>
+                        <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
+                    </div>
+                    <div>
+                        <label for="unitBaseTempSelect" class="form-label mt-3">De :</label>
+                        <select class="form-select" id="unitBaseTempSelect">
+                            <option value="celsius">Celsius °C</option>
+                            <option value="fahrenheit">Fahrenheit °F</option>
+                            <option value="kelvin">Kelvin K</option>
+                            <option value="reaumur">Reaumur °Ré</option>
+                            <option value="newton">Newton °N</option>
+                            <option value="rankine">Rankine °Ra</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="unitConvTempSelect" class="form-label mt-1">À :</label>
+                        <select class="form-select" id="unitConvTempSelect">
+                            <option value="celsius">Celsius °C</option>
+                            <option value="fahrenheit">Fahrenheit °F</option>
+                            <option value="kelvin">Kelvin K</option>
+                            <option value="reaumur">Reaumur °Ré</option>
+                            <option value="newton">Newton °N</option>
+                            <option value="rankine">Rankine °Ra</option>
+                        </select>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="button" id="convertTempButton" class="btn btn-primary mt-4">Convertir</button>
+                    </div>
+                    <div>
+                        <label class="col-form-label mt-2" for="valueInput">Valeur convertie :</label>
+                        <input type="text" class="form-control" readonly id="valueInput">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="text-white">
+            <img class="icon" src="./images/icone_copyright.png" />
+            Copyright : VALÉRIE GOUIN et MATISSE PAGEAU @ 2024
+        </p>
+    </div>
+</body>
+
+</html>
