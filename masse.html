@@ -13,7 +13,7 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_donnees.png" alt="Convertisseur de distances" />
+        <img class="headerImage" src="./images/image_entete_masses.png" alt="Convertisseur de distances" />
     </div>
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">
@@ -51,24 +51,24 @@
                 </a>
             </div>
             <!----------------------- DONNÉES ------------------------>
-            <div class="card text-white bg-info m-3 conversionType active">
-                <div class="card-header text-center">Données</div>
-                <div class="card-body">
-                    <div class="cardImage">
-                        <img class="image" src="./images/icone_donnees.png" alt="données" />
-                    </div>
-                </div>
-            </div>
-            <!------------------------ MASSE ------------------------->
-            <div class="card text-white bg-success m-3 conversionType">
-                <a href="./masse.html">
-                    <div class="card-header text-center">Masse</div>
+            <div class="card text-white bg-info m-3 conversionType">
+                <a href="./donnees.html">
+                    <div class="card-header text-center">Données</div>
                     <div class="card-body">
                         <div class="cardImage">
-                            <img class="image" src="./images/icone_masse.png" alt="masse" />
+                            <img class="image" src="./images/icone_donnees.png" alt="données" />
                         </div>
                     </div>
                 </a>
+            </div>
+            <!------------------------ MASSE ------------------------->
+            <div class="card text-white bg-success m-3 conversionType active">
+                <div class="card-header text-center">Masse</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_masse.png" alt="masse" />
+                    </div>
+                </div>
             </div>
             <!---------------------- SUPERFICIE ----------------------->
             <div class="card text-white bg-info m-3 conversionType">
@@ -162,31 +162,45 @@
                 <div>
                     <label for="unitBaseTempSelect" class="form-label mt-3">De :</label>
                     <select class="form-select" id="unitBaseSelect">
-                        <option value="bit">Bit b</option>
-                        <option value="octet">Octet O</option>
-                        <option value="kilooctet">Kilooctet Ko</option>
-                        <option value="megaoctet">Megaoctet Mo</option>
-                        <option value="gigaoctet">Gigaoctet Go</option>
-                        <option value="terraoctet">Teraoctet To</option>
-                        <option value="petaoctet">Petaoctet Po</option>
-                        <option value="exaoctet">Exaoctet Eo</option>
-                        <option value="zettaoctet">Zettaoctet Zo</option>
-                        <option value="yottaoctet">Yottaoctet Yo</option>
+                        <option value="tonne">Tonne t</option>
+                        <option value="kilogramme">Kilogramme kg</option>
+                        <option value="hectogramme">Hectogramme hg</option>
+                        <option value="gramme">Gramme g</option>
+                        <option value="décigramme">Decigramme dg</option>
+                        <option value="centigramme">Centigramme cg</option>
+                        <option value="milligramme">Milligramme mg</option>
+                        <option value="microgramme">Microgramme µg</option>
+                        <option value="carat">Carat</option>
+                        <option value="grain">Grain</option>
+                        <option value="once">Once oz</option>
+                        <option value="livre">Livre lb</option>
+                        <option value="quintalLong">Quintal long (uk) cwt</option>
+                        <option value="quintalCourt">Quintal court (us) cwt</option>
+                        <option value="tonneLongue">Tonne longue (uk) ton</option>
+                        <option value="tonneCourte">Tonne courte (us) ton</option>
+                        <option value="stone">Stone (uk) st</option>
                     </select>
                 </div>
                 <div>
                     <label for="unitConvTempSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
-                        <option value="bit">Bit b</option>
-                        <option value="octet">Octet O</option>
-                        <option value="kilooctet">Kilooctet Ko</option>
-                        <option value="megaoctet">Megaoctet Mo</option>
-                        <option value="gigaoctet">Gigaoctet Go</option>
-                        <option value="terraoctet">Teraoctet To</option>
-                        <option value="petaoctet">Petaoctet Po</option>
-                        <option value="exaoctet">Exaoctet Eo</option>
-                        <option value="zettaoctet">Zettaoctet Zo</option>
-                        <option value="yottaoctet">Yottaoctet Yo</option>
+                        <option value="tonne">Tonne t</option>
+                        <option value="kilogramme">Kilogramme kg</option>
+                        <option value="hectogramme">Hectogramme hg</option>
+                        <option value="gramme">Gramme g</option>
+                        <option value="décigramme">Decigramme dg</option>
+                        <option value="centigramme">Centigramme cg</option>
+                        <option value="milligramme">Milligramme mg</option>
+                        <option value="microgramme">Microgramme µg</option>
+                        <option value="carat">Carat</option>
+                        <option value="grain">Grain</option>
+                        <option value="once">Once oz</option>
+                        <option value="livre">Livre lb</option>
+                        <option value="quintalLong">Quintal long (uk) cwt</option>
+                        <option value="quintalCourt">Quintal court (us) cwt</option>
+                        <option value="tonneLongue">Tonne longue (uk) ton</option>
+                        <option value="tonneCourte">Tonne courte (us) ton</option>
+                        <option value="stone">Stone (uk) st</option>
                     </select>
                 </div>
             </div>
