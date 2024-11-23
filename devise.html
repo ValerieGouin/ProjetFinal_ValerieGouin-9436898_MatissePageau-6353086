@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet final - Valérie Gouin et Matisse Pageau</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <img class="headerImage" src="./images/image_entete_devises.png" alt="Convertisseur de distances" />
+    </div>
+    <!---------------------- TEMPÉRATURE ----------------------->
+    <div class="mainSection mainPadding">
+        <div class="typeCont">
+            <div class="card text-white bg-danger m-3 conversionType">
+                <a href="./temperature.html">
+                    <div class="card-header text-center">Température</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_temperature.png" alt="temperature" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!------------------------ VOLUME ------------------------->
+            <div class="card text-white bg-warning m-3 conversionType">
+                <a href="./volume.html">
+                    <div class="card-header text-center">Volume</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_volume.png" alt="volume" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!----------------------- DISTANCE ------------------------>
+            <div class="card text-white bg-success m-3 conversionType">
+                <a href="./distance.html">
+                    <div class="card-header text-center">Distance</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_distance.png" alt="distance" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!----------------------- DONNÉES ------------------------>
+            <div class="card text-white bg-info m-3 conversionType">
+                <a href="./donnees.html">
+                    <div class="card-header text-center">Données</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_donnees.png" alt="données" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!------------------------ MASSE ------------------------->
+            <div class="card text-white bg-success m-3 conversionType">
+                <a href="./masse.html">
+                    <div class="card-header text-center">Masse</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_masse.png" alt="masse" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---------------------- SUPERFICIE ----------------------->
+            <div class="card text-white bg-info m-3 conversionType">
+                <a href="./superficie.html">
+                    <div class="card-header text-center">Superficie</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_superficie.png" alt="superficie" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!----------------------- VITESSE ------------------------>
+            <div class="card text-white bg-danger m-3 conversionType">
+                <a href="./vitesse.html">
+                    <div class="card-header text-center">Vitesse</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_vitesse.png" alt="vitesse" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!------------------------ TEMPS ------------------------->
+            <div class="card text-white bg-warning m-3 conversionType">
+                <a href="./temps.html">
+                    <div class="card-header text-center">Temps</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_temps.png" alt="temps" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---------------------- FREQUENCE ----------------------->
+            <div class="card text-white bg-info m-3 conversionType">
+                <a href="./frequence.html">
+                    <div class="card-header text-center">Fréquence</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_frequence.png" alt="frequence" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---------------------- PRESSION ----------------------->
+            <div class="card text-white bg-success m-3 conversionType">
+                <a href="./pression.html">
+                    <div class="card-header text-center">Pression</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_pression.png" alt="pression" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---------------------- ÉNERGIE ----------------------->
+            <div class="card text-white bg-warning m-3 conversionType">
+                <a href="./energie.html">
+                    <div class="card-header text-center">Énergie</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_energie.png" alt="energie" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---------------------- DEVISE ----------------------->
+            <div class="card text-white bg-danger m-3 conversionType active">
+                <div class="card-header text-center">Devise</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_devise.png" alt="devise" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------- CONVERTISSEUR ----------------------->
+        <div class="conversionCont">
+            <div class="valueField">
+                <label class="col-form-label mt-2" for="valueInput">Résultat :</label>
+                <input type="text" class="form-control" readonly id="valueInput">
+            </div>
+            <div class="valueField">
+                <label class="col-form-label mt-4" for="valueInput">Valeur à convertir :</label>
+                <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
+            </div>
+            <div class="mb-5 units">
+                <div>
+                    <label for="unitBaseTempSelect" class="form-label mt-3">De :</label>
+                    <select class="form-select" id="unitBaseSelect">
+                        <option value="rand">Rand (Afrique du Sud)</option>
+                        <option value="riyal">Riyal (Arabie saoudite)</option>
+                        <option value="dollarAustralien">Dollar (Australie)</option>
+                        <option value="real">Real (Brésil)</option>
+                        <option value="dollarCanadien">Dollar (Canada)</option>
+                        <option value="renminbi">Renminbi (Chine)</option>
+                        <option value="won">Won (Corée du Sud)</option>
+                        <option value="dollarUS">Dollar (E-U)</option>
+                        <option value="euro">Euro (Europe)</option>
+                        <option value="dollarHK">Dollar (Hong Kong)</option>
+                        <option value="roupie">Roupie (Inde)</option>
+                        <option value="rupiah">Rupiah (Indonésie)</option>
+                        <option value="yen">Yen (Japon)</option>
+                        <option value="ringgit">Ringgit (Malaisie)</option>
+                        <option value="pesos">Pesos (Mexique)</option>
+                        <option value="couronneNorvege">Couronne (Norvège)</option>
+                        <option value="dollarNZ">Dollar (Nouvelle-Zélande)</option>
+                        <option value="nouveauSol">Nouveau sol (Pérou)</option>
+                        <option value="livreSterling">Livre sterling (Royaume-Uni)</option>
+                        <option value="rouble">Rouble (Russie)</option>
+                        <option value="dollarSingapour">Dollar (Singapour)</option>
+                        <option value="couronneSuede">Couronne (Suède)</option>
+                        <option value="franc">Franc (Suisse)</option>
+                        <option value="dollarTaiwan">Dollar (Taïwan)</option>
+                        <option value="bath">Baht (Thaïlande)</option>
+                        <option value="livreTurquie">Livre (Turquie)</option>
+                        <option value="dong">Dong (Vietnam)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="unitConvTempSelect" class="form-label mt-3">À :</label>
+                    <select class="form-select" id="unitConvSelect">
+                        <option value="rand">Rand (Afrique du Sud)</option>
+                        <option value="riyal">Riyal (Arabie saoudite)</option>
+                        <option value="dollarAustralien">Dollar (Australie)</option>
+                        <option value="real">Real (Brésil)</option>
+                        <option value="dollarCanadien">Dollar (Canada)</option>
+                        <option value="renminbi">Renminbi (Chine)</option>
+                        <option value="won">Won (Corée du Sud)</option>
+                        <option value="dollarUS">Dollar (E-U)</option>
+                        <option value="euro">Euro (Europe)</option>
+                        <option value="dollarHK">Dollar (Hong Kong)</option>
+                        <option value="roupie">Roupie (Inde)</option>
+                        <option value="rupiah">Rupiah (Indonésie)</option>
+                        <option value="yen">Yen (Japon)</option>
+                        <option value="ringgit">Ringgit (Malaisie)</option>
+                        <option value="pesos">Pesos (Mexique)</option>
+                        <option value="couronneNorvege">Couronne (Norvège)</option>
+                        <option value="dollarNZ">Dollar (Nouvelle-Zélande)</option>
+                        <option value="nouveauSol">Nouveau sol (Pérou)</option>
+                        <option value="livreSterling">Livre sterling (Royaume-Uni)</option>
+                        <option value="rouble">Rouble (Russie)</option>
+                        <option value="dollarSingapour">Dollar (Singapour)</option>
+                        <option value="couronneSuede">Couronne (Suède)</option>
+                        <option value="franc">Franc (Suisse)</option>
+                        <option value="dollarTaiwan">Dollar (Taïwan)</option>
+                        <option value="bath">Baht (Thaïlande)</option>
+                        <option value="livreTurquie">Livre (Turquie)</option>
+                        <option value="dong">Dong (Vietnam)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="text-white">
+            <img class="icon" src="./images/icone_copyright.png" />
+            Copyright : VALÉRIE GOUIN et MATISSE PAGEAU @ 2024
+        </p>
+    </div>
+</body>
+
+</html>
