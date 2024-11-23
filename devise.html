@@ -13,7 +13,7 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_temps.png" alt="Convertisseur de distances" />
+        <img class="headerImage" src="./images/image_entete_devises.png" alt="Convertisseur de distances" />
     </div>
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">
@@ -95,13 +95,15 @@
                 </a>
             </div>
             <!------------------------ TEMPS ------------------------->
-            <div class="card text-white bg-warning m-3 conversionType active">
-                <div class="card-header text-center">Temps</div>
-                <div class="card-body">
-                    <div class="cardImage">
-                        <img class="image" src="./images/icone_temps.png" alt="temps" />
+            <div class="card text-white bg-warning m-3 conversionType">
+                <a href="./temps.html">
+                    <div class="card-header text-center">Temps</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_temps.png" alt="temps" />
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!---------------------- FREQUENCE ----------------------->
             <div class="card text-white bg-info m-3 conversionType">
@@ -137,15 +139,13 @@
                 </a>
             </div>
             <!---------------------- DEVISE ----------------------->
-            <div class="card text-white bg-danger m-3 conversionType">
-                <a href="./devise.html">
-                    <div class="card-header text-center">Devise</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_devise.png" alt="devise" />
-                        </div>
+            <div class="card text-white bg-danger m-3 conversionType active">
+                <div class="card-header text-center">Devise</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_devise.png" alt="devise" />
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!---------------------- CONVERTISSEUR ----------------------->
@@ -162,43 +162,65 @@
                 <div>
                     <label for="unitBaseTempSelect" class="form-label mt-3">De :</label>
                     <select class="form-select" id="unitBaseSelect">
-                        <option value="anneeCommune">Année (commune)</option>
-                        <option value="anneeBissextile">Année (bissextile)</option>
-                        <option value="calendrierGregorien">Moyenne calendrier Grégorien</option>
-                        <option value="calendrierJulien">Moyenne calendrier Julien</option>
-                        <option value="anneeTropicale">Année (tropicale)</option>
-                        <option value="semaine">Semaine</option>
-                        <option value="jour">Jour</option>
-                        <option value="heure">Heure</option>
-                        <option value="minute">Minute</option>
-                        <option value="seconde">Seconde</option>
-                        <option value="milliseconde">Milliseconde</option>
-                        <option value="microseconde">Microseconde</option>
-                        <option value="nanoseconde">Nanoseconde</option>
-                        <option value="picoseconde">Picoseconde</option>
-                        <option value="femtoseconde">Femtoseconde</option>
-                        <option value="attoseconde">Attoseconde</option>
+                        <option value="rand">Rand (Afrique du Sud)</option>
+                        <option value="riyal">Riyal (Arabie saoudite)</option>
+                        <option value="dollarAustralien">Dollar (Australie)</option>
+                        <option value="real">Real (Brésil)</option>
+                        <option value="dollarCanadien">Dollar (Canada)</option>
+                        <option value="renminbi">Renminbi (Chine)</option>
+                        <option value="won">Won (Corée du Sud)</option>
+                        <option value="dollarUS">Dollar (E-U)</option>
+                        <option value="euro">Euro (Europe)</option>
+                        <option value="dollarHK">Dollar (Hong Kong)</option>
+                        <option value="roupie">Roupie (Inde)</option>
+                        <option value="rupiah">Rupiah (Indonésie)</option>
+                        <option value="yen">Yen (Japon)</option>
+                        <option value="ringgit">Ringgit (Malaisie)</option>
+                        <option value="pesos">Pesos (Mexique)</option>
+                        <option value="couronneNorvege">Couronne (Norvège)</option>
+                        <option value="dollarNZ">Dollar (Nouvelle-Zélande)</option>
+                        <option value="nouveauSol">Nouveau sol (Pérou)</option>
+                        <option value="livreSterling">Livre sterling (Royaume-Uni)</option>
+                        <option value="rouble">Rouble (Russie)</option>
+                        <option value="dollarSingapour">Dollar (Singapour)</option>
+                        <option value="couronneSuede">Couronne (Suède)</option>
+                        <option value="franc">Franc (Suisse)</option>
+                        <option value="dollarTaiwan">Dollar (Taïwan)</option>
+                        <option value="bath">Baht (Thaïlande)</option>
+                        <option value="livreTurquie">Livre (Turquie)</option>
+                        <option value="dong">Dong (Vietnam)</option>
                     </select>
                 </div>
                 <div>
                     <label for="unitConvTempSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
-                        <option value="anneeCommune">Année (commune)</option>
-                        <option value="anneeBissextile">Année (bissextile)</option>
-                        <option value="calendrierGregorien">Moyenne calendrier Grégorien</option>
-                        <option value="calendrierJulien">Moyenne calendrier Julien</option>
-                        <option value="anneeTropicale">Année (tropicale)</option>
-                        <option value="semaine">Semaine</option>
-                        <option value="jour">Jour</option>
-                        <option value="heure">Heure</option>
-                        <option value="minute">Minute</option>
-                        <option value="seconde">Seconde</option>
-                        <option value="milliseconde">Milliseconde</option>
-                        <option value="microseconde">Microseconde</option>
-                        <option value="nanoseconde">Nanoseconde</option>
-                        <option value="picoseconde">Picoseconde</option>
-                        <option value="femtoseconde">Femtoseconde</option>
-                        <option value="attoseconde">Attoseconde</option>
+                        <option value="rand">Rand (Afrique du Sud)</option>
+                        <option value="riyal">Riyal (Arabie saoudite)</option>
+                        <option value="dollarAustralien">Dollar (Australie)</option>
+                        <option value="real">Real (Brésil)</option>
+                        <option value="dollarCanadien">Dollar (Canada)</option>
+                        <option value="renminbi">Renminbi (Chine)</option>
+                        <option value="won">Won (Corée du Sud)</option>
+                        <option value="dollarUS">Dollar (E-U)</option>
+                        <option value="euro">Euro (Europe)</option>
+                        <option value="dollarHK">Dollar (Hong Kong)</option>
+                        <option value="roupie">Roupie (Inde)</option>
+                        <option value="rupiah">Rupiah (Indonésie)</option>
+                        <option value="yen">Yen (Japon)</option>
+                        <option value="ringgit">Ringgit (Malaisie)</option>
+                        <option value="pesos">Pesos (Mexique)</option>
+                        <option value="couronneNorvege">Couronne (Norvège)</option>
+                        <option value="dollarNZ">Dollar (Nouvelle-Zélande)</option>
+                        <option value="nouveauSol">Nouveau sol (Pérou)</option>
+                        <option value="livreSterling">Livre sterling (Royaume-Uni)</option>
+                        <option value="rouble">Rouble (Russie)</option>
+                        <option value="dollarSingapour">Dollar (Singapour)</option>
+                        <option value="couronneSuede">Couronne (Suède)</option>
+                        <option value="franc">Franc (Suisse)</option>
+                        <option value="dollarTaiwan">Dollar (Taïwan)</option>
+                        <option value="bath">Baht (Thaïlande)</option>
+                        <option value="livreTurquie">Livre (Turquie)</option>
+                        <option value="dong">Dong (Vietnam)</option>
                     </select>
                 </div>
             </div>
