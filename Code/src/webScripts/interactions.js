@@ -1,6 +1,7 @@
 import { temperature } from "../convertionTypes/temperature.js";
 import { volume } from "../convertionTypes/volume.js";
 import distance from "../convertionTypes/distances.js";
+import { donnees } from "../convertionTypes/donnees.js";
 
 const typeBoxs = document.querySelectorAll('.conversionType');
 const valueInput = document.getElementById('valueInput')
@@ -25,6 +26,9 @@ function updateOutput () {
           break
         case "distance":
           editResult(new distance().ConvertDistance(value, fromUnitSelected, toUnitSelected))
+          break
+        case "données":
+          editResult(new donnees().ConvertDonnee(value, fromUnitSelected, toUnitSelected))
           break
       }
     }
@@ -54,6 +58,6 @@ function editResult(result) {
   if(value == 0) {
     resultBox.value = ""
   }else{
-    resultBox.value = Math.round(parseFloat(result) * 100) / 100
+    resultBox.value = Math.round(parseFloat(result) * 1000) / 1000
   }
 }
