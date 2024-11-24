@@ -1,4 +1,4 @@
-class distance {
+class distances {
   choices = ["Kilimètre", "Centimètre", "Millimètre", "Mile", "Mile marin", "Yard", "Pied", "pouce", "Mètre"]
   ToMeter (value, fromUnit) {
     let result = 0
@@ -79,3 +79,5 @@ class distance {
     return FromMeter(kelvin, toUnit)
   }
 }
+
+export default distances

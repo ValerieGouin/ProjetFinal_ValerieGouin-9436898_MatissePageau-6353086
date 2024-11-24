@@ -151,8 +151,8 @@
         <!---------------------- CONVERTISSEUR ----------------------->
         <div class="conversionCont">
             <div class="valueField">
-                <label class="col-form-label mt-2" for="valueInput">Résultat :</label>
-                <input type="text" class="form-control" readonly id="valueInput">
+                <label class="col-form-label mt-2" for="valueOutput">Résultat :</label>
+                <input type="text" class="form-control" readonly id="valueOutput">
             </div>
             <div class="valueField">
                 <label class="col-form-label mt-4" for="valueInput">Valeur à convertir :</label>
@@ -160,25 +160,19 @@
             </div>
             <div class="mb-5 units">
                 <div>
-                    <label for="unitBaseTempSelect" class="form-label mt-3">De :</label>
+                    <label for="unitBaseSelect" class="form-label mt-3">De :</label>
                     <select class="form-select" id="unitBaseSelect">
                         <option value="celsius">Celsius °C</option>
                         <option value="fahrenheit">Fahrenheit °F</option>
                         <option value="kelvin">Kelvin K</option>
-                        <option value="reaumur">Reaumur °Ré</option>
-                        <option value="newton">Newton °N</option>
-                        <option value="rankine">Rankine °Ra</option>
                     </select>
                 </div>
                 <div>
-                    <label for="unitConvTempSelect" class="form-label mt-3">À :</label>
+                    <label for="unitConvSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
                         <option value="celsius">Celsius °C</option>
                         <option value="fahrenheit">Fahrenheit °F</option>
                         <option value="kelvin">Kelvin K</option>
-                        <option value="reaumur">Reaumur °Ré</option>
-                        <option value="newton">Newton °N</option>
-                        <option value="rankine">Rankine °Ra</option>
                     </select>
                 </div>
             </div>
@@ -191,5 +185,5 @@
         </p>
     </div>
 </body>
-
+<script type="module" src="/Code/src/webScripts/interactions.js"></script>
 </html>

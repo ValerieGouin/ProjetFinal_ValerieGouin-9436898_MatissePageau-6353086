@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/bootstrap.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>   
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                 </a>
             </div>
             <!------------------------ VOLUME ------------------------->
-            <div class="card text-white bg-warning m-3 conversionTyp active">
+            <div class="card text-white bg-warning m-3 conversionType active">
                 <div class="card-header text-center">Volume</div>
                 <div class="card-body">
                     <div class="cardImage">
@@ -152,8 +152,8 @@
         <!---------------------- CONVERTISSEUR ----------------------->
         <div class="conversionCont">
             <div class="valueField">
-                <label class="col-form-label mt-2" for="valueInput">Résultat :</label>
-                <input type="text" class="form-control" readonly id="valueInput">
+                <label class="col-form-label mt-2" for="valueOutput">Résultat :</label>
+                <input type="text" class="form-control" readonly id="valueOutput">
             </div>
             <div class="valueField">
                 <label class="col-form-label mt-4" for="valueInput">Valeur à convertir :</label>
@@ -161,53 +161,31 @@
             </div>
             <div class="mb-5 units">
                 <div>
-                    <label for="unitBaseTempSelect" class="form-label mt-3">De :</label>
+                    <label for="unitBaseSelect" class="form-label mt-3">De :</label>
                     <select class="form-select" id="unitBaseSelect">
                         <option value="metreCube">Mètre cube m³</option>
-                        <option value="decimetreCube">Décimètre cube dm³</option>
-                        <option value="centimetreCube">Centimètre cube cm³</option>
-                        <option value="hectolitre">Hectolitre hl</option>
-                        <option value="decalitre">Décalitre dal</option>
                         <option value="litre">Litre l</option>
-                        <option value="decilitre">Décilitre dl</option>
-                        <option value="centilitre">Centilitre cl</option>
                         <option value="millilitre">Millilitre ml</option>
                         <option value="onceLiquideUK">Once liquide(UK) uk fl oz</option>
                         <option value="onceLiquideUS">Once liquide(US) us fl oz</option>
                         <option value="pouceCube">Pouce cube pouce³</option>
                         <option value="piedCube">Pied cube ft³</option>
-                        <option value="vergeCube">Verge cube verge³</option>
                         <option value="gallonUK">Gallon (UK) gallon uk gal</option>
                         <option value="gallonUS">Gallon (US) gallon us gal</option>
-                        <option value="barilPetrole">Baril de pétrole bbl</option>
-                        <option value="pinteUK">Pinte (UK) pint pt(Imp)</option>
-                        <option value="pinteLiquideUS">Pinte liquide (US) fluid pint pt (US fl)</option>
-                        <option value="pinteSecheUS">Pinte sèche (US) gallon uk pt (US dry)</option>
                     </select>
                 </div>
                 <div>
-                    <label for="unitConvTempSelect" class="form-label mt-3">À :</label>
+                    <label for="unitConvSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
-                        <option value="metreCube">Mètre cube m³</option>
-                        <option value="decimetreCube">Décimètre cube dm³</option>
-                        <option value="centimetreCube">Centimètre cube cm³</option>
-                        <option value="hectolitre">Hectolitre hl</option>
-                        <option value="decalitre">Décalitre dal</option>
-                        <option value="litre">Litre l</option>
-                        <option value="decilitre">Décilitre dl</option>
-                        <option value="centilitre">Centilitre cl</option>
-                        <option value="millilitre">Millilitre ml</option>
-                        <option value="onceLiquideUK">Once liquide(UK) uk fl oz</option>
-                        <option value="onceLiquideUS">Once liquide(US) us fl oz</option>
-                        <option value="pouceCube">Pouce cube pouce³</option>
-                        <option value="piedCube">Pied cube ft³</option>
-                        <option value="vergeCube">Verge cube verge³</option>
-                        <option value="gallonUK">Gallon (UK) gallon uk gal</option>
-                        <option value="gallonUS">Gallon (US) gallon us gal</option>
-                        <option value="barilPetrole">Baril de pétrole bbl</option>
-                        <option value="pinteUK">Pinte (UK) pint pt(Imp)</option>
-                        <option value="pinteLiquideUS">Pinte liquide (US) fluid pint pt (US fl)</option>
-                        <option value="pinteSecheUS">Pinte sèche (US) gallon uk pt (US dry)</option>
+                      <option value="metreCube">Mètre cube m³</option>
+                      <option value="litre">Litre l</option>
+                      <option value="millilitre">Millilitre ml</option>
+                      <option value="onceLiquideUK">Once liquide(UK) uk fl oz</option>
+                      <option value="onceLiquideUS">Once liquide(US) us fl oz</option>
+                      <option value="pouceCube">Pouce cube pouce³</option>
+                      <option value="piedCube">Pied cube ft³</option>
+                      <option value="gallonUK">Gallon (UK) gallon uk gal</option>
+                      <option value="gallonUS">Gallon (US) gallon us gal</option>
                     </select>
                 </div>
             </div>
@@ -220,5 +198,5 @@
         </p>
     </div>
 </body>
-
+<script type="module" src="/Code/src/webScripts/interactions.js"></script>
 </html>
