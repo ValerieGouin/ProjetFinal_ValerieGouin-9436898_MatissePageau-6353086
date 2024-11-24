@@ -25,6 +25,10 @@ body {
     padding-right: 50px;
 }
 
+.card.conversionType {
+    border: solid transparent 3px
+}
+
 .card:hover,
 .card.active {
     border: solid white 3px;
