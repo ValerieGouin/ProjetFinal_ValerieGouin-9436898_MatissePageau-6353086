@@ -13,7 +13,11 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_devises.png" alt="Convertisseur de distances" />
+        <picture>
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_devise_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_devise.png" />
+            <img class="headerImage" src="./images/image_entete_devise.png" alt="Convertisseur de devises" />
+        </picture>
     </div>
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">

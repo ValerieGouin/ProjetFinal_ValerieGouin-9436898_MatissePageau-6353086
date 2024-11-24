@@ -13,7 +13,11 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_energies.png" alt="Convertisseur de distances" />
+        <picture>
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_energie_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_energie.png" />
+            <img class="headerImage" src="./images/image_entete_energie.png" alt="Convertisseur de d'énergies" />
+        </picture>
     </div>
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">

@@ -13,7 +13,11 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_superficies.png" alt="Convertisseur de distances" />
+        <picture>
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_superficie_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_superficie.png" />
+            <img class="headerImage" src="./images/image_entete_superficie.png" alt="Convertisseur de superficies" />
+        </picture>
     </div>
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">

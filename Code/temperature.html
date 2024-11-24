@@ -13,7 +13,11 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_temperatures.png" alt="Convertisseur de températures"/>
+        <picture>
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_temperature_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_temperature.png" />
+            <img class="headerImage" src="./images/image_entete_temperature.png" alt="Convertisseur de températures" />
+        </picture>
     </div>
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">
