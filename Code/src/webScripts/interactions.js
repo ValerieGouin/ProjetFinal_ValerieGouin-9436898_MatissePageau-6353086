@@ -13,19 +13,18 @@ let fromUnitSelected = fromUnits.options[fromUnits.selectedIndex].value
 let toUnitSelected = toUnits.options[toUnits.selectedIndex].value
 let value = 0
 
-function updateOutput () {  
-  console.log("oui");
-  
+function updateOutput () {   
   typeBoxs.forEach(type => {
     if(type.classList.contains("active")) {
       switch (type.innerText.toLowerCase()) {
         case "température":
-          editResult(new temperature().ConvertTemperature(value, fromUnitSelected, toUnitSelected).toFixed(3))
+          editResult(new temperature().ConvertTemperature(value, fromUnitSelected, toUnitSelected))
           break;
         case "volume":
-          editResult(new volume().ConvertVolume(value, fromUnitSelected, toUnitSelected).toFixed(3))
+          editResult(new volume().ConvertVolume(value, fromUnitSelected, toUnitSelected))
           break
         case "distance":
+          editResult(new distance().ConvertDistance(value, fromUnitSelected, toUnitSelected))
           break
       }
     }
@@ -55,6 +54,6 @@ function editResult(result) {
   if(value == 0) {
     resultBox.value = ""
   }else{
-    resultBox.value = result
+    resultBox.value = Math.round(parseFloat(result) * 100) / 100
   }
 }

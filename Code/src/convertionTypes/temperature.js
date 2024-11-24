@@ -1,5 +1,4 @@
 class temperature {
-  choices = ["Celsius", "Fahrenheit", "Kelvin"];
   
   Tokelvin(value, fromUnit) {
     let result = 0

@@ -1,24 +1,27 @@
 class distances {
-  choices = ["Kilimètre", "Centimètre", "Millimètre", "Mile", "Mile marin", "Yard", "Pied", "pouce", "Mètre"]
+
   ToMeter (value, fromUnit) {
     let result = 0
     switch (fromUnit) {
-      case "kilomètre":
+      case "kilometre":
         result = value * 1000
         break;
-      case "centimètre":
+      case "decimetre":
+        result = value / 10
+        break
+      case "centimetre":
         result = value / 100
         break
-      case "millimètre":
+      case "millimetre":
         result = value / 1000
         break
-      case "mile":
+      case "mille":
         result = value * 1609
         break
-      case "mile marin":
+      case "milleMarin":
         result = value * 1852
         break
-      case "yard":
+      case "verge":
         result = value / 1.094
         break
       case "pied":
@@ -27,12 +30,12 @@ class distances {
       case "pouce":
         result = value / 39.37
         break
-      case "mètre":
+      case "metre":
         result = value
         break
     
       default:
-        throw new console.error("Unitée non supportée");
+        throw new Error("Unitée non supportée");
     }
     return result
   }
@@ -40,22 +43,25 @@ class distances {
   FromMeter (value, fromUnit) {
     let result = 0
     switch (fromUnit) {
-      case "kilomètre":
+      case "kilometre":
         result = value / 1000
         break;
-      case "centimètre":
+      case "decimetre":
+        result = value * 10
+        break
+      case "centimetre":
         result = value * 100
         break
-      case "millimètre":
+      case "millimetre":
         result = value * 1000
         break
-      case "mile":
+      case "mille":
         result = value / 1609
         break
-      case "mile marin":
+      case "milleMarin":
         result = value / 1852
         break
-      case "yard":
+      case "verge":
         result = value * 1.094
         break
       case "pied":
@@ -64,19 +70,19 @@ class distances {
       case "pouce":
         result = value * 39.37
         break
-      case "mètre":
+      case "metre":
         result = value
         break
     
       default:
-        throw new console.error("Unitée non supportée");
+        throw new Error("Unitée non supportée");
     }
     return result
   }
   
   ConvertDistance(value, fromUnit, toUnit) {
-    let kelvin = ToMeter(value, fromUnit)
-    return FromMeter(kelvin, toUnit)
+    let kelvin = this.ToMeter(value, fromUnit)
+    return this.FromMeter(kelvin, toUnit)
   }
 }
 

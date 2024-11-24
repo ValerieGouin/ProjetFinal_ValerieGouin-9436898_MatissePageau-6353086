@@ -1,31 +1,30 @@
 class volume {
-  choices = ["Mètre cube","Litre", "Millilitre", "Once liquide impériale", "Once liquide américaine", "Pouce cube", "Pied cube", "Galon impérial", "Galon américain"]
 
-  Toliter (value, fromUnit) {
+  Toliter (value, fromUnit) {  
     let result = 0
-    switch (fromUnit.toLowerCase()) {
-      case "mètre cube":
+    switch (fromUnit) {
+      case "metreCube":
         result = value * 1000
         break;
       case "millilitre":
         result = value / 1000
         break
-      case "once liquide impériale":
+      case "onceLiquideUK":
         result = value / 35.195
         break
-      case "once liquide américaine":
+      case "onceLiquideUS":
         result = value / 33.814
         break
-      case "pouce cube":
+      case "pouceCube":
         result = value / 61.024
         break
-      case "pied cube":
+      case "piedCube":
         result = value / 28.317
         break
-      case "galon impérial":
+      case "gallonUK":
         result = value * 4.546
         break
-      case "galon américain":
+      case "gallonUS":
         result = value * 3.785
         break
       case "litre":
@@ -39,6 +38,7 @@ class volume {
   
   FromLiter (value, fromUnit) {
     let result = 0
+    
     switch (fromUnit) {
       case "metreCube":
         result = value / 1000
