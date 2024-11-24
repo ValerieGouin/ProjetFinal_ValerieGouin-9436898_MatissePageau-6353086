@@ -13,7 +13,11 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_frequences.png" alt="Convertisseur de distances" />
+        <picture>
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_frequence_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_frequence.png" />
+            <img class="headerImage" src="./images/image_entete_frequence.png" alt="Convertisseur de fréquences" />
+        </picture>
     </div>
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">

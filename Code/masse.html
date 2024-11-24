@@ -13,9 +13,13 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_masses.png" alt="Convertisseur de distances" />
+        <picture>
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_masse_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_masse.png" />
+            <img class="headerImage" src="./images/image_entete_masse.png" alt="Convertisseur de masses" />
+        </picture>
     </div>
-    <!---------------------- TEMPÉRATURE ----------------------->
+    <!----------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">
         <div class="typeCont">
             <div class="card text-white bg-danger m-3">

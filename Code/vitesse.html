@@ -13,7 +13,11 @@
 
 <body>
     <div class="header">
-        <img class="headerImage" src="./images/image_entete_vitesses.png" alt="Convertisseur de distances" />
+        <picture>
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_vitesse_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_vitesse.png" />
+            <img class="headerImage" src="./images/image_entete_vitesse.png" alt="Convertisseur de vitesses" />
+        </picture>
     </div>
     <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">
