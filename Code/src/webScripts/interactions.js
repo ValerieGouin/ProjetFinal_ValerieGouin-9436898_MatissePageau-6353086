@@ -5,6 +5,7 @@ import { donnees } from "../convertionTypes/donnees.js";
 import { masse } from "../convertionTypes/masse.js";
 import { superficie } from "../convertionTypes/superficie.js";
 import { vitesse } from "../convertionTypes/vitesse.js";
+import { time } from "../convertionTypes/temps.js";
 
 const typeBoxs = document.querySelectorAll('.conversionType');
 const valueInput = document.getElementById('valueInput')
@@ -43,7 +44,7 @@ function updateOutput () {
           editResult(new vitesse().ConvertVitesse(value, fromUnitSelected, toUnitSelected))
           break
         case "temps":
-          editResult()
+          editResult(new time().ConvertTime(value, fromUnitSelected, toUnitSelected))
           break
         case "fréquence":
           editResult()
