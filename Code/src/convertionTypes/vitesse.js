@@ -31,16 +31,16 @@ class vitesse {
         result = value
         break;
       case "metreSeconde":
-        result = value * 3.6
+        result = value / 3.6
         break
       case "milleHeure":
-        result = value * 1.609
+        result = value / 1.609
         break
       case "knot":
-        result = value * 1.852
+        result = value / 1.852
         break
       case "piedSeconde":
-        result = value * 1.097
+        result = value / 1.097
         break
       default:
         throw new Error("Unitée non supportée");

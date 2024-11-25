@@ -89,6 +89,6 @@ function editResult(result) {
   if(value == 0) {
     resultBox.value = ""
   }else{
-    resultBox.value = Math.round(parseFloat(result) * 1000) / 1000
+    resultBox.value = Math.round(parseFloat(result) * 100) / 100
   }
 }
