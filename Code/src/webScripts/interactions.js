@@ -7,6 +7,7 @@ import { superficie } from "../convertionTypes/superficie.js";
 import { vitesse } from "../convertionTypes/vitesse.js";
 import { time } from "../convertionTypes/temps.js";
 import { frequence } from "../convertionTypes/frequence.js";
+import { pression } from "../convertionTypes/pression.js";
 
 const typeBoxs = document.querySelectorAll('.conversionType');
 const valueInput = document.getElementById('valueInput')
@@ -48,10 +49,10 @@ function updateOutput () {
           editResult(new time().ConvertTime(value, fromUnitSelected, toUnitSelected))
           break
         case "fréquence":
-          editResult(new frequence().ConvertTime(value, fromUnitSelected, toUnitSelected))
+          editResult(new frequence().ConvertFrequence(value, fromUnitSelected, toUnitSelected))
           break
         case "pression":
-          editResult()
+          editResult(new pression().ConvertPressure(value, fromUnitSelected, toUnitSelected))
           break
         case "énergie":
           editResult()
