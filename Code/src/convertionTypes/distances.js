@@ -86,4 +86,4 @@ class distances {
   }
 }
 
-export default distances
+export { distances }

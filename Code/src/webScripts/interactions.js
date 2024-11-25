@@ -1,6 +1,6 @@
 import { temperature } from "../convertionTypes/temperature.js";
 import { volume } from "../convertionTypes/volume.js";
-import { distance } from "../convertionTypes/distances.js";
+import { distances } from "../convertionTypes/distances.js";
 import { donnees } from "../convertionTypes/donnees.js";
 import { masse } from "../convertionTypes/masse.js";
 import { superficie } from "../convertionTypes/superficie.js";
@@ -32,7 +32,7 @@ function updateOutput () {
           editResult(new volume().ConvertVolume(value, fromUnitSelected, toUnitSelected))
           break
         case "distance":
-          editResult(new distance().ConvertDistance(value, fromUnitSelected, toUnitSelected))
+          editResult(new distances().ConvertDistance(value, fromUnitSelected, toUnitSelected))
           break
         case "données":
           editResult(new donnees().ConvertDonnee(value, fromUnitSelected, toUnitSelected))
