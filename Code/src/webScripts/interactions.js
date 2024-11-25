@@ -2,6 +2,7 @@ import { temperature } from "../convertionTypes/temperature.js";
 import { volume } from "../convertionTypes/volume.js";
 import distance from "../convertionTypes/distances.js";
 import { donnees } from "../convertionTypes/donnees.js";
+import { masse } from "../convertionTypes/masse.js";
 
 const typeBoxs = document.querySelectorAll('.conversionType');
 const valueInput = document.getElementById('valueInput')
@@ -29,6 +30,30 @@ function updateOutput () {
           break
         case "données":
           editResult(new donnees().ConvertDonnee(value, fromUnitSelected, toUnitSelected))
+          break
+        case "masse":
+          editResult(new masse().ConvertMasse(value, fromUnitSelected, toUnitSelected))
+          break
+        case "superficie":
+          editResult()
+          break
+        case "vitesse":
+          editResult()
+          break
+        case "temps":
+          editResult()
+          break
+        case "fréquence":
+          editResult()
+          break
+        case "pression":
+          editResult()
+          break
+        case "énergie":
+          editResult()
+          break
+        case "devise":
+          editResult()
           break
       }
     }
