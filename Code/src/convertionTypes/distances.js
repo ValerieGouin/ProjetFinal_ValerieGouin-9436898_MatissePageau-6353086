@@ -81,8 +81,8 @@ class distances {
   }
   
   ConvertDistance(value, fromUnit, toUnit) {
-    let kelvin = this.ToMeter(value, fromUnit)
-    return this.FromMeter(kelvin, toUnit)
+    let meter = this.ToMeter(value, fromUnit)
+    return this.FromMeter(meter, toUnit)
   }
 }
 

@@ -3,6 +3,7 @@ import { volume } from "../convertionTypes/volume.js";
 import distance from "../convertionTypes/distances.js";
 import { donnees } from "../convertionTypes/donnees.js";
 import { masse } from "../convertionTypes/masse.js";
+import { superficie } from "../convertionTypes/superficie.js";
 
 const typeBoxs = document.querySelectorAll('.conversionType');
 const valueInput = document.getElementById('valueInput')
@@ -35,7 +36,7 @@ function updateOutput () {
           editResult(new masse().ConvertMasse(value, fromUnitSelected, toUnitSelected))
           break
         case "superficie":
-          editResult()
+          editResult(new superficie().ConvertSuperficie(value, fromUnitSelected, toUnitSelected))
           break
         case "vitesse":
           editResult()

@@ -79,8 +79,8 @@ class donnees {
   }
   
   ConvertDonnee(value, fromUnit, toUnit) {
-    let liter = this.ToGigaoctet(value, fromUnit)
-    return this.FromGigaoctet(liter, toUnit)
+    let gigaoctet = this.ToGigaoctet(value, fromUnit)
+    return this.FromGigaoctet(gigaoctet, toUnit)
   }
 }
 
