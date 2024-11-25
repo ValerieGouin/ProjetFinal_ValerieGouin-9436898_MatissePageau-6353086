@@ -6,6 +6,7 @@ import { masse } from "../convertionTypes/masse.js";
 import { superficie } from "../convertionTypes/superficie.js";
 import { vitesse } from "../convertionTypes/vitesse.js";
 import { time } from "../convertionTypes/temps.js";
+import { frequence } from "../convertionTypes/frequence.js";
 
 const typeBoxs = document.querySelectorAll('.conversionType');
 const valueInput = document.getElementById('valueInput')
@@ -47,7 +48,7 @@ function updateOutput () {
           editResult(new time().ConvertTime(value, fromUnitSelected, toUnitSelected))
           break
         case "fréquence":
-          editResult()
+          editResult(new frequence().ConvertTime(value, fromUnitSelected, toUnitSelected))
           break
         case "pression":
           editResult()

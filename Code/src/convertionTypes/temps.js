@@ -67,8 +67,8 @@ class time {
   }
   
   ConvertTime(value, fromUnit, toUnit) {
-    let meterCube = this.ToHour(value, fromUnit)
-    return this.FromHour(meterCube, toUnit)
+    let hour = this.ToHour(value, fromUnit)
+    return this.FromHour(hour, toUnit)
   }
 }
 
