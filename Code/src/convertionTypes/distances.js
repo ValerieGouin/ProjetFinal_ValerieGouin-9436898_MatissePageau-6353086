@@ -1,6 +1,6 @@
 class distances {
 
-  ToMeter (value, fromUnit) {
+  ToMeter (value, fromUnit) {  //Convert all to Meter
     let result = 0
     switch (fromUnit) {
       case "kilometre":
@@ -40,7 +40,7 @@ class distances {
     return result
   }
   
-  FromMeter (value, fromUnit) {
+  FromMeter (value, fromUnit) { //Convert Meter to the selected unit
     let result = 0
     switch (fromUnit) {
       case "kilometre":

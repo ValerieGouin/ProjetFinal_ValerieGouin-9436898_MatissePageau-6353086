@@ -1,6 +1,6 @@
 class frequence {
 
-  ToHz (value, fromUnit) {  
+  ToHz (value, fromUnit) { //Convert all to Hz
     let result = 0
     switch (fromUnit) {
       case "hertz":
@@ -21,7 +21,7 @@ class frequence {
     return result
   }
   
-  FromHz (value, fromUnit) {
+  FromHz (value, fromUnit) { //Convert Hz to the selected unit
     let result = 0
     switch (fromUnit) {
       case "hertz":

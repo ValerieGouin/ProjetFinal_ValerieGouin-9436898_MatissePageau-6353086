@@ -1,6 +1,6 @@
 class time {
 
-  ToHour (value, fromUnit) {  
+  ToHour (value, fromUnit) { //Convert all to Hour 
     let result = 0
     switch (fromUnit) {
       case "semaine":
@@ -33,7 +33,7 @@ class time {
     return result
   }
   
-  FromHour (value, fromUnit) {
+  FromHour (value, fromUnit) { //Convert Hour to the selected unit
     let result = 0
     switch (fromUnit) {
       case "semaine":

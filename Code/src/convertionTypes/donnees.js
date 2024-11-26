@@ -1,6 +1,6 @@
 class donnees {
 
-  ToGigaoctet (value, fromUnit) {  
+  ToGigaoctet (value, fromUnit) { //Convert all to Go
     let result = 0
     switch (fromUnit) {
       case "bit":
@@ -39,7 +39,7 @@ class donnees {
     return result
   }
   
-  FromGigaoctet (value, fromUnit) {
+  FromGigaoctet (value, fromUnit) { //Convert Go to the selected unit
     let result = 0
     switch (fromUnit) {
       case "bit":

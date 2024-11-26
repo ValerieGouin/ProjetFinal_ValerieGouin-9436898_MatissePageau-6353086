@@ -1,6 +1,6 @@
 class masse {
 
-  Tolivre (value, fromUnit) {  
+  Tolivre (value, fromUnit) { //Convert all to Livre  
     let result = 0
     switch (fromUnit) {
       case "tonne":
@@ -39,7 +39,7 @@ class masse {
     return result
   }
   
-  FromLivre (value, fromUnit) {
+  FromLivre (value, fromUnit) { //Convert Livre to the selected unit
     let result = 0
     switch (fromUnit) {
       case "tonne":

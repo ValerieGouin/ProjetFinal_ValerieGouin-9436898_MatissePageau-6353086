@@ -1,6 +1,6 @@
 class pression {
 
-  Tobar (value, fromUnit) {  
+  Tobar (value, fromUnit) { //Convert all to Bar   
     let result = 0
     switch (fromUnit) {
       case "atmosphère":
@@ -21,7 +21,7 @@ class pression {
     return result
   }
   
-  FromBar (value, fromUnit) {
+  FromBar (value, fromUnit) { //Convert Bar to the selected unit
     let result = 0
     switch (fromUnit) {
       case "atmosphère":

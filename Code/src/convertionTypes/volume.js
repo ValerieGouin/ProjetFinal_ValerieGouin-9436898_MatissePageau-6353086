@@ -1,6 +1,6 @@
 class volume {
 
-  Toliter (value, fromUnit) {  
+  Toliter (value, fromUnit) { //Convert all to Liter   
     let result = 0
     switch (fromUnit) {
       case "metreCube":
@@ -36,7 +36,7 @@ class volume {
     return result
   }
   
-  FromLiter (value, fromUnit) {
+  FromLiter (value, fromUnit) { //Convert Liter to the selected unit
     let result = 0
     
     switch (fromUnit) {
