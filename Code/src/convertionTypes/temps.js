@@ -33,9 +33,9 @@ class time {
     return result
   }
   
-  FromHour (value, fromUnit) { //Convert Hour to the selected unit
+  FromHour (value, toUnit) { //Convert Hour to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "semaine":
         result = value / 168
         break;

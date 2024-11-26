@@ -20,7 +20,7 @@ class temperature {
 
   Fromkelvin(value, toUnit) { //Convert Kelvin to the selected unit
     let result = 0;
-    switch (toUnit.toLowerCase()) {
+    switch (toUnit) {
       case "celsius":
         result = value - 273.15
         break;

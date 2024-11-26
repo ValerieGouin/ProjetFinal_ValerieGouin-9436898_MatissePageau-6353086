@@ -39,9 +39,9 @@ class donnees {
     return result
   }
   
-  FromGigaoctet (value, fromUnit) { //Convert Go to the selected unit
+  FromGigaoctet (value, toUnit) { //Convert Go to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "bit":
         result = value * (8 * 10 ** 9)
         break;

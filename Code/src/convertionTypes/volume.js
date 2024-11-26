@@ -36,10 +36,10 @@ class volume {
     return result
   }
   
-  FromLiter (value, fromUnit) { //Convert Liter to the selected unit
+  FromLiter (value, toUnit) { //Convert Liter to the selected unit
     let result = 0
     
-    switch (fromUnit) {
+    switch (toUnit) {
       case "metreCube":
         result = value / 1000
         break;

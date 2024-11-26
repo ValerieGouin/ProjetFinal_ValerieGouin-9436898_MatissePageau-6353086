@@ -33,9 +33,9 @@ class superficie {
     return result
   }
   
-  FromMeterSquare (value, fromUnit) { //Convert Meter square to the selected unit
+  FromMeterSquare (value, toUnit) { //Convert Meter square to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "kilometreCarre":
         result = value / 1000000
         break;

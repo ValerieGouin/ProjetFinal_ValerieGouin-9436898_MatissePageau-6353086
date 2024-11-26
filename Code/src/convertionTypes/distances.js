@@ -40,9 +40,9 @@ class distances {
     return result
   }
   
-  FromMeter (value, fromUnit) { //Convert Meter to the selected unit
+  FromMeter (value, toUnit) { //Convert Meter to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "kilometre":
         result = value / 1000
         break;

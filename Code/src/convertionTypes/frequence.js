@@ -21,9 +21,9 @@ class frequence {
     return result
   }
   
-  FromHz (value, fromUnit) { //Convert Hz to the selected unit
+  FromHz (value, toUnit) { //Convert Hz to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "hertz":
         result = value
         break;

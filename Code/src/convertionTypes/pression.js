@@ -21,9 +21,9 @@ class pression {
     return result
   }
   
-  FromBar (value, fromUnit) { //Convert Bar to the selected unit
+  FromBar (value, toUnit) { //Convert Bar to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "atmosphère":
         result = value / 1.013
         break;
