@@ -16,16 +16,16 @@ class volume {
         result = value / 33.814
         break
       case "pouceCube":
-        result = value / 61.024
+        result = value / 61.0237440947
         break
       case "piedCube":
-        result = value / 28.317
+        result = value * 28.31681991
         break
       case "gallonUK":
         result = value * 4.546
         break
       case "gallonUS":
-        result = value * 3.785
+        result = value * 3.785411784
         break
       case "litre":
         result = value
@@ -53,16 +53,16 @@ class volume {
         result = value * 33.814
         break
       case "pouceCube":
-        result = value * 61.024
+        result = value * 61.0237440947
         break
       case "piedCube":
-        result = value * 28.317
+        result = value / 28.31681991
         break
       case "gallonUK":
         result = value / 4.546
         break
       case "gallonUS":
-        result = value / 3.785
+        result = value / 3.785411784
         break
       case "litre":
         result = value
