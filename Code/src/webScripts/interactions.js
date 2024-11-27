@@ -10,21 +10,20 @@ import { frequence } from "../convertionTypes/frequence.js";
 import { pression } from "../convertionTypes/pression.js";
 import { energy } from "../convertionTypes/energie.js";
 
-const typeBoxs = document.querySelectorAll('.conversionType');
-const valueInput = document.getElementById('valueInput')
-const fromUnits = document.getElementById('unitBaseSelect')
-const toUnits = document.getElementById('unitConvSelect')
-const resultBox = document.getElementById('valueOutput')
-
+const typeBoxs = document.querySelectorAll('.conversionType');  //The boxes on the top of the page for the desired type of convertion
+const valueInput = document.getElementById('valueInput')        //The input value
+const fromUnits = document.getElementById('unitBaseSelect')     //The base unit
+const toUnits = document.getElementById('unitConvSelect')       //The selected unit to convert to
+const resultBox = document.getElementById('valueOutput')        //The result box
 
 let fromUnitSelected = fromUnits.options[fromUnits.selectedIndex].value
 let toUnitSelected = toUnits.options[toUnits.selectedIndex].value
 let value = 0
 
-function updateOutput () {   
+function updateOutput () {  //Select what convertion to do based on the type desired
   typeBoxs.forEach(type => {
     if(type.classList.contains("active")) {
-      switch (type.innerText.toLowerCase()) {
+      switch (type.innerText.toLowerCase()) { //switch between the type of convertion
         case "température":
           editResult(new temperature().ConvertTemperature(value, fromUnitSelected, toUnitSelected))
           break;
@@ -66,7 +65,7 @@ function updateOutput () {
   });
 }
 
-valueInput.addEventListener('input', (event) => {  
+valueInput.addEventListener('input', (event) => { //Event listener every time the value change in the input box
   if(event.target.value == "") {
     value = 0
   }else{
@@ -75,17 +74,17 @@ valueInput.addEventListener('input', (event) => {
   updateOutput()
 })
 
-fromUnits.addEventListener('change', (event) => {
+fromUnits.addEventListener('change', (event) => {  //Event listener every time the base unit change in the input box
   fromUnitSelected = event.target.options[event.target.selectedIndex].value;
   updateOutput()
 })
 
-toUnits.addEventListener('change', (event) => {
+toUnits.addEventListener('change', (event) => {  //Event listener every time the selected unit to convert to change in the input box
   toUnitSelected = event.target.options[event.target.selectedIndex].value;
   updateOutput()
 })
 
-function editResult(result) {
+function editResult(result) { //Change the value in the result box
   if(value == 0) {
     resultBox.value = ""
   }else{

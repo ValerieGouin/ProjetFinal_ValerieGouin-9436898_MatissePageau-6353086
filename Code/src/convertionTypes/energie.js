@@ -1,6 +1,6 @@
 class energy {
 
-  ToWattheure (value, fromUnit) {  
+  ToWattheure (value, fromUnit) { //Convert all to Wh
     let result = 0
     switch (fromUnit) {
       case "joule":
@@ -36,9 +36,9 @@ class energy {
     return result
   }
   
-  FromWattheure (value, fromUnit) {
+  FromWattheure (value, toUnit) { //Convert Wh to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "joule":
         result = value * 3600000
         break;

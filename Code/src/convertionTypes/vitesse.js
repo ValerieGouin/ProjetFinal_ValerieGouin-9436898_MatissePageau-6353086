@@ -1,6 +1,6 @@
 class vitesse {
 
-  ToKmph (value, fromUnit) {  
+  ToKmph (value, fromUnit) { //Convert all to Kmph  
     let result = 0
     switch (fromUnit) {
       case "kilomètreHeure":
@@ -24,9 +24,9 @@ class vitesse {
     return result
   }
   
-  FromKmph (value, fromUnit) {
+  FromKmph (value, toUnit) { //Convert Kmph to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "kilomètreHeure":
         result = value
         break;

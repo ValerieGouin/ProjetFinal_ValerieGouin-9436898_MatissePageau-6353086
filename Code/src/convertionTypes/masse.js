@@ -1,22 +1,22 @@
 class masse {
 
-  Tolivre (value, fromUnit) {  
+  Tolivre (value, fromUnit) { //Convert all to Livre  
     let result = 0
     switch (fromUnit) {
       case "tonne":
-        result = value * 2205
+        result = value * 2204.622621848
         break;
       case "kilogramme":
-        result = value * 2.205
+        result = value * 2.204622621848
         break
       case "gramme":
-        result = value / 453.6
+        result = value / 453.59237
         break
       case "milligramme":
-        result = value / 453600
+        result = value / 453592.37
         break
       case "microgramme":
-        result = value / 453600000
+        result = value / 453592370.000159801
         break
       case "once":
         result = value / 16
@@ -39,23 +39,23 @@ class masse {
     return result
   }
   
-  FromLivre (value, fromUnit) {
+  FromLivre (value, toUnit) { //Convert Livre to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "tonne":
-        result = value / 2205
+        result = value / 2204.622621848
         break;
       case "kilogramme":
-        result = value / 2.205
+        result = value / 2.204622621848
         break
       case "gramme":
-        result = value * 453.6
+        result = value * 453.59237
         break
       case "milligramme":
-        result = value * 453600
+        result = value * 453592.37
         break
       case "microgramme":
-        result = value * 453600000
+        result = value * 453592370.000159801
         break
       case "once":
         result = value * 16

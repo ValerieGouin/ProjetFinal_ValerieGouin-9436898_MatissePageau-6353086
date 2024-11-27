@@ -1,6 +1,6 @@
 class superficie {
 
-  ToMeterCube (value, fromUnit) {  
+  ToMeterSquare (value, fromUnit) { //Convert all to Meter square  
     let result = 0
     switch (fromUnit) {
       case "kilometreCarre":
@@ -33,9 +33,9 @@ class superficie {
     return result
   }
   
-  FromMeterCube (value, fromUnit) {
+  FromMeterSquare (value, toUnit) { //Convert Meter square to the selected unit
     let result = 0
-    switch (fromUnit) {
+    switch (toUnit) {
       case "kilometreCarre":
         result = value / 1000000
         break;
@@ -67,8 +67,8 @@ class superficie {
   }
   
   ConvertSuperficie(value, fromUnit, toUnit) {
-    let meterCube = this.ToMeterCube(value, fromUnit)
-    return this.FromMeterCube(meterCube, toUnit)
+    let meterCube = this.ToMeterSquare(value, fromUnit)
+    return this.FromMeterSquare(meterCube, toUnit)
   }
 }
 
