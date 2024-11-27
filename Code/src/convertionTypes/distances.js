@@ -16,19 +16,19 @@ class distances {
         result = value / 1000
         break
       case "mille":
-        result = value * 1609
+        result = value * 1609.344
         break
       case "milleMarin":
         result = value * 1852
         break
       case "verge":
-        result = value / 1.094
+        result = value / 1.0936132983377
         break
       case "pied":
-        result = value / 3.281
+        result = value / 3.280839895
         break
       case "pouce":
-        result = value / 39.37
+        result = value /  39.3700787402
         break
       case "metre":
         result = value
@@ -56,19 +56,19 @@ class distances {
         result = value * 1000
         break
       case "mille":
-        result = value / 1609
+        result = value / 1609.344
         break
       case "milleMarin":
         result = value / 1852
         break
       case "verge":
-        result = value * 1.094
+        result = value * 1.0936132983377
         break
       case "pied":
-        result = value * 3.281
+        result = value * 3.280839895
         break
       case "pouce":
-        result = value * 39.37
+        result = value *  39.3700787402
         break
       case "metre":
         result = value
