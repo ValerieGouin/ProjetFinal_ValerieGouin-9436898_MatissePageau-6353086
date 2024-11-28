@@ -72,7 +72,7 @@ class energy {
     return result
   }
   
-  ConvertEnergy(value, fromUnit, toUnit) {
+  ConvertEnergy(value, fromUnit, toUnit) { // Convert from one unit to another
     let wh = this.ToWattheure(value, fromUnit)
     return this.FromWattheure(wh, toUnit)
   }

@@ -78,7 +78,7 @@ class masse {
     return result
   }
   
-  ConvertMasse(value, fromUnit, toUnit) {
+  ConvertMasse(value, fromUnit, toUnit) { // Convert from one unit to another
     let livre = this.Tolivre(value, fromUnit)
     return this.FromLivre(livre, toUnit)
   }

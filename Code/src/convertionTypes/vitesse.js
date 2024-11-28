@@ -48,7 +48,7 @@ class vitesse {
     return result
   }
   
-  ConvertVitesse(value, fromUnit, toUnit) {
+  ConvertVitesse(value, fromUnit, toUnit) { // Convert from one unit to another
     let meterCube = this.ToKmph(value, fromUnit)
     return this.FromKmph(meterCube, toUnit)
   }

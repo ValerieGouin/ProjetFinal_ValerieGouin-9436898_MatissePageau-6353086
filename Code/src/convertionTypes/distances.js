@@ -80,7 +80,7 @@ class distances {
     return result
   }
   
-  ConvertDistance(value, fromUnit, toUnit) {
+  ConvertDistance(value, fromUnit, toUnit) { // Convert from one unit to another
     let meter = this.ToMeter(value, fromUnit)
     return this.FromMeter(meter, toUnit)
   }

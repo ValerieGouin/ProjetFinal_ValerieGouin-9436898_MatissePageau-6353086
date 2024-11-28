@@ -1,5 +1,5 @@
 class currency {
-  ToUSD (value, currencyValue, fromUnit) { //Convert all to Livre  
+  ToUSD (value, currencyValue, fromUnit) { //Convert all to USD  
     let result = 0
     switch (fromUnit) {
       case "CAD":
@@ -32,7 +32,7 @@ class currency {
     return result
   }
   
-  FromUSD (value, currencyValue, toUnit) { //Convert Livre to the selected unit
+  FromUSD (value, currencyValue, toUnit) { //Convert USD to the selected unit
     let result = 0
     switch (toUnit) {
       case "CAD":
@@ -65,7 +65,7 @@ class currency {
     return result
   }
   
-  ConvertCurrency(response, value, fromUnit, toUnit) {  
+  ConvertCurrency(response, value, fromUnit, toUnit) { // Convert from one unit to another
     let USD = this.ToUSD(value, response.data, fromUnit)
     return this.FromUSD(USD, response.data, toUnit)
   }

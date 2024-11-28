@@ -74,7 +74,7 @@ class volume {
     return result
   }
   
-  ConvertVolume(value, fromUnit, toUnit) {
+  ConvertVolume(value, fromUnit, toUnit) { // Convert from one unit to another
     let liter = this.Toliter(value, fromUnit)
     return this.FromLiter(liter, toUnit)
   }

@@ -42,7 +42,7 @@ class frequence {
     return result
   }
   
-  ConvertFrequence(value, fromUnit, toUnit) {
+  ConvertFrequence(value, fromUnit, toUnit) { // Convert from one unit to another
     let hz = this.ToHz(value, fromUnit)
     return this.FromHz(hz, toUnit)
   }
