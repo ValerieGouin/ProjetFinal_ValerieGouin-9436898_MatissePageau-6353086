@@ -1,36 +1,30 @@
 class currency {
-  ToUSD (value, USDValue, fromUnit) { //Convert all to Livre  
+  ToUSD (value, currencyValue, fromUnit) { //Convert all to Livre  
     let result = 0
     switch (fromUnit) {
       case "CAD":
-        result = 1
+        result = value / currencyValue.CAD.value
         break;
       case "EUR":
-        result = value * 2.204622621848
+        result = value / currencyValue.EUR.value
         break
       case "USD":
         result = value
         break
-      case "milligramme":
-        result = value / 453592.37
+      case "CHF":
+        result = value / currencyValue.CHF.value
         break
-      case "microgramme":
-        result = value / 453592370.000159801
+      case "VND":
+        result = value / currencyValue.VND.value
         break
-      case "once":
-        result = value / 16
+      case "JPY":
+        result = value / currencyValue.JPY.value
         break
-      case "livre":
-        result = value
+      case "CNY":
+        result = value / currencyValue.CNY.value
         break
-      case "tonneLongue":
-        result = value * 2240
-        break
-      case "tonneCourte":
-        result = value * 2000
-        break
-      case "stone":
-        result = value * 14
+      case "GBP":
+        result = value / currencyValue.GBP.value
         break
       default:
         throw new Error("Unitée non supportée");
@@ -38,38 +32,32 @@ class currency {
     return result
   }
   
-  FromUSD (value, toUnit) { //Convert Livre to the selected unit
+  FromUSD (value, currencyValue, toUnit) { //Convert Livre to the selected unit
     let result = 0
     switch (toUnit) {
-      case "tonne":
-        result = value / 2204.622621848
+      case "CAD":
+        result = value * currencyValue.CAD.value
         break;
-      case "kilogramme":
-        result = value / 2.204622621848
+      case "EUR":
+        result = value * currencyValue.EUR.value
         break
-      case "gramme":
-        result = value * 453.59237
-        break
-      case "milligramme":
-        result = value * 453592.37
-        break
-      case "microgramme":
-        result = value * 453592370.000159801
-        break
-      case "once":
-        result = value * 16
-        break
-      case "livre":
+      case "USD":
         result = value
         break
-      case "tonneLongue":
-        result = value / 2240
+      case "CHF":
+        result = value * currencyValue.CHF.value
         break
-      case "tonneCourte":
-        result = value / 2000
+      case "VND":
+        result = value * currencyValue.VND.value
         break
-      case "stone":
-        result = value / 14
+      case "JPY":
+        result = value * currencyValue.JPY.value
+        break
+      case "CNY":
+        result = value * currencyValue.CNY.value
+        break
+      case "GBP":
+        result = value * currencyValue.GBP.value
         break
       default:
         throw new Error("Unitée non supportée");
@@ -77,9 +65,9 @@ class currency {
     return result
   }
   
-  ConvertCurrency(value, fromUnit, toUnit) {
-    let USD = this.ToUSD(value, fromUnit)
-    return this.FromUSD(USD, toUnit)
+  ConvertCurrency(response, value, fromUnit, toUnit) {  
+    let USD = this.ToUSD(value, response.data, fromUnit)
+    return this.FromUSD(USD, response.data, toUnit)
   }
 }
 
