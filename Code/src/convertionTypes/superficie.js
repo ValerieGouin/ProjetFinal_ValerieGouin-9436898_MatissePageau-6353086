@@ -21,10 +21,10 @@ class superficie {
         result = value / 1.196;
         break;
       case "piedCarre":
-        result = value / 10.764;
+        result = value / 10.7639;
         break;
       case "acre":
-        result = value * 4047;
+        result = value * 4046.86266972;
         break;
       default:
         throw new Error("Unitée non supportée");
@@ -54,10 +54,10 @@ class superficie {
         result = value * 1.196;
         break;
       case "piedCarre":
-        result = value * 10.764;
+        result = value * 10.7639;
         break;
       case "acre":
-        result = value / 4047;
+        result = value / 4046.86266972;
         break;
       default:
         throw new Error("Unitée non supportée");
