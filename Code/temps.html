@@ -19,9 +19,42 @@
             <img class="headerImage" src="./images/image_entete_temps.png" alt="Convertisseur de temps" />
         </picture>
     </div>
-    <!---------------------- TEMPÉRATURE ----------------------->
     <div class="mainSection mainPadding">
         <div class="typeCont">
+            <!------------------------ MASSE ------------------------->
+            <div class="card text-white bg-success m-3 conversionType">
+                <a href="./masse.html">
+                    <div class="card-header text-center">Masse</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_masse.png" alt="masse" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!----------------------- DISTANCE ------------------------>
+            <div class="card text-white bg-warning m-3 conversionType">
+                <a href="./distance.html">
+                    <div class="card-header text-center">Distance</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_distance.png" alt="distance" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---------------------- SURFACE ----------------------->
+            <div class="card text-white bg-info m-3 conversionType">
+                <a href="./surface.html">
+                    <div class="card-header text-center">Surface</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_surface.png" alt="surface" />
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---------------------- TEMPÉRATURE ----------------------->
             <div class="card text-white bg-danger m-3 conversionType">
                 <a href="./temperature.html">
                     <div class="card-header text-center">Température</div>
@@ -43,17 +76,6 @@
                     </div>
                 </a>
             </div>
-            <!----------------------- DISTANCE ------------------------>
-            <div class="card text-white bg-success m-3 conversionType">
-                <a href="./distance.html">
-                    <div class="card-header text-center">Distance</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_distance.png" alt="distance" />
-                        </div>
-                    </div>
-                </a>
-            </div>
             <!----------------------- DONNÉES ------------------------>
             <div class="card text-white bg-info m-3 conversionType">
                 <a href="./donnees.html">
@@ -61,28 +83,6 @@
                     <div class="card-body">
                         <div class="cardImage">
                             <img class="image" src="./images/icone_donnees.png" alt="données" />
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!------------------------ MASSE ------------------------->
-            <div class="card text-white bg-success m-3 conversionType">
-                <a href="./masse.html">
-                    <div class="card-header text-center">Masse</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_masse.png" alt="masse" />
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!---------------------- SUPERFICIE ----------------------->
-            <div class="card text-white bg-info m-3 conversionType">
-                <a href="./superficie.html">
-                    <div class="card-header text-center">Superficie</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_superficie.png" alt="superficie" />
                         </div>
                     </div>
                 </a>
@@ -99,7 +99,7 @@
                 </a>
             </div>
             <!------------------------ TEMPS ------------------------->
-            <div class="card text-white bg-warning m-3 conversionType active">
+            <div class="card text-white bg-warning m-3 conversionType">
                 <div class="card-header text-center">Temps</div>
                 <div class="card-body">
                     <div class="cardImage">
@@ -179,14 +179,14 @@
                 <div>
                     <label for="unitConvSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
-                      <option value="semaine">Semaine</option>
-                      <option value="jour">Jour</option>
-                      <option value="heure">Heure</option>
-                      <option value="minute">Minute</option>
-                      <option value="seconde">Seconde</option>
-                      <option value="milliseconde">Milliseconde</option>
-                      <option value="microseconde">Microseconde</option>
-                      <option value="nanoseconde">Nanoseconde</option>
+                        <option value="semaine">Semaine</option>
+                        <option value="jour">Jour</option>
+                        <option value="heure">Heure</option>
+                        <option value="minute">Minute</option>
+                        <option value="seconde">Seconde</option>
+                        <option value="milliseconde">Milliseconde</option>
+                        <option value="microseconde">Microseconde</option>
+                        <option value="nanoseconde">Nanoseconde</option>
                     </select>
                 </div>
             </div>
@@ -200,4 +200,5 @@
     </div>
 </body>
 <script type="module" src="./src/webScripts/interactions.js"></script>
+
 </html>
