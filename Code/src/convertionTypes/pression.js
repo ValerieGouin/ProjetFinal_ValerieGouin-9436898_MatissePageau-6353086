@@ -1,51 +1,50 @@
 class pression {
-
-  Tobar (value, fromUnit) { //Convert all to Bar   
-    let result = 0
+  Tobar(value, fromUnit) { // Convert all to Bar
+    let result = 0;
     switch (fromUnit) {
       case "atmosphère":
-        result = value * 1.013
+        result = value * 1.01325;
         break;
       case "bar":
-        result = value
-        break
+        result = value;
+        break;
       case "pascal":
-        result = value / 100000
-        break
+        result = value / 100000;
+        break;
       case "psi":
-        result = value / 14.504
-        break
+        result = value / 14.5037738;
+        break;
       default:
         throw new Error("Unitée non supportée");
     }
-    return result
+    return result;
   }
-  
-  FromBar (value, toUnit) { //Convert Bar to the selected unit
-    let result = 0
+
+  FromBar(value, toUnit) { // Convert Bar to the selected unit
+    let result = 0;
     switch (toUnit) {
       case "atmosphère":
-        result = value / 1.013
+        result = value / 1.01325;
         break;
       case "bar":
-        result = value
-        break
+        result = value;
+        break;
       case "pascal":
-        result = value * 100000
-        break
+        result = value * 100000;
+        break;
       case "psi":
-        result = value * 14.504
-        break
+        result = value * 14.5037738;
+        break;
       default:
         throw new Error("Unitée non supportée");
     }
-    return result
+    return result;
   }
-  
-  ConvertPressure(value, fromUnit, toUnit) {
-    let bar = this.Tobar(value, fromUnit)
-    return this.FromBar(bar, toUnit)
+
+  ConvertPressure(value, fromUnit, toUnit) { // Convert from one unit to another
+    let bar = this.Tobar(value, fromUnit);
+    return this.FromBar(bar, toUnit);
   }
 }
 
-export { pression }
+export { pression };
