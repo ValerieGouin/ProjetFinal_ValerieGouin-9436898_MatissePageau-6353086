@@ -14,10 +14,15 @@
 <body>
     <div class="header">
         <picture>
-            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_pression_mobile.png" />
-            <source media="(min-width: 800px)" srcset="./images/image_entete_pression.png" />
-            <img class="headerImage" src="./images/image_entete_pression.png" alt="Convertisseur de pressions" />
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_temps_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_temps.png" />
+            <img class="headerImage" src="./images/image_entete_temps.png" alt="Convertisseur de temps" />
         </picture>
+        <div class="choixLangues">
+          FR            
+          <a href="../english/index.html">EN</a>
+          <a href="../espanol/index.html">ES</a>
+      </div>
     </div>
     <div class="mainSection mainPadding">
         <div class="typeCont">
@@ -99,15 +104,13 @@
                 </a>
             </div>
             <!------------------------ TEMPS ------------------------->
-            <div class="card text-white bg-warning m-3 conversionType temps">
-                <a href="./temps.html">
-                    <div class="card-header text-center">Temps</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_temps.png" alt="temps" />
-                        </div>
+            <div class="card text-white bg-warning m-3 active conversionType temps">
+                <div class="card-header text-center">Temps</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_temps.png" alt="temps" />
                     </div>
-                </a>
+                </div>
             </div>
             <!---------------------- FREQUENCE ----------------------->
             <div class="card text-white bg-info m-3 conversionType frequence">
@@ -121,13 +124,15 @@
                 </a>
             </div>
             <!---------------------- PRESSION ----------------------->
-            <div class="card text-white bg-success m-3 active conversionType pression">
-                <div class="card-header text-center">Pression</div>
-                <div class="card-body">
-                    <div class="cardImage">
-                        <img class="image" src="./images/icone_pression.png" alt="pression" />
+            <div class="card text-white bg-success m-3 conversionType pression">
+                <a href="./pression.html">
+                    <div class="card-header text-center">Pression</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_pression.png" alt="pression" />
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!---------------------- ÉNERGIE ----------------------->
             <div class="card text-white bg-warning m-3 conversionType energie">
@@ -166,19 +171,27 @@
                 <div>
                     <label for="unitBaseSelect" class="form-label mt-3">De :</label>
                     <select class="form-select" id="unitBaseSelect">
-                        <option value="atmosphère">Atmosphère (atm)</option>
-                        <option value="bar">Bar</option>
-                        <option value="pascal">Pascal (Pa)</option>
-                        <option value="psi">Livre-force par pouce carre (psi)</option>
+                        <option value="semaine">Semaine</option>
+                        <option value="jour">Jour</option>
+                        <option value="heure">Heure</option>
+                        <option value="minute">Minute</option>
+                        <option value="seconde">Seconde</option>
+                        <option value="milliseconde">Milliseconde</option>
+                        <option value="microseconde">Microseconde</option>
+                        <option value="nanoseconde">Nanoseconde</option>
                     </select>
                 </div>
                 <div>
                     <label for="unitConvSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
-                        <option value="atmosphère">Atmosphère (atm)</option>
-                        <option value="bar">Bar</option>
-                        <option value="pascal">Pascal (Pa)</option>
-                        <option value="psi">Livre-force par pouce carre (psi)</option>
+                        <option value="semaine">Semaine</option>
+                        <option value="jour">Jour</option>
+                        <option value="heure">Heure</option>
+                        <option value="minute">Minute</option>
+                        <option value="seconde">Seconde</option>
+                        <option value="milliseconde">Milliseconde</option>
+                        <option value="microseconde">Microseconde</option>
+                        <option value="nanoseconde">Nanoseconde</option>
                     </select>
                 </div>
             </div>

@@ -14,10 +14,15 @@
 <body>
     <div class="header">
         <picture>
-            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_surface_mobile.png" />
-            <source media="(min-width: 800px)" srcset="./images/image_entete_surface.png" />
-            <img class="headerImage" src="./images/image_entete_surface.png" alt="Convertisseur de surfaces" />
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_vitesse_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_vitesse.png" />
+            <img class="headerImage" src="./images/image_entete_vitesse.png" alt="Convertisseur de vitesses" />
         </picture>
+        <div class="choixLangues">
+          FR            
+          <a href="../english/index.html">EN</a>
+          <a href="../espanol/index.html">ES</a>
+      </div>
     </div>
     <div class="mainSection mainPadding">
         <div class="typeCont">
@@ -44,13 +49,15 @@
                 </a>
             </div>
             <!---------------------- SURFACE ----------------------->
-            <div class="card text-white bg-info m-3 active conversionType surface">
-                <div class="card-header text-center">Surface</div>
-                <div class="card-body">
-                    <div class="cardImage">
-                        <img class="image" src="./images/icone_surface.png" alt="surface" />
+            <div class="card text-white bg-info m-3 conversionType surface">
+                <a href="./surface.html">
+                    <div class="card-header text-center">Surface</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_surface.png" alt="surface" />
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!---------------------- TEMPÉRATURE ----------------------->
             <div class="card text-white bg-danger m-3 conversionType temperature">
@@ -86,15 +93,13 @@
                 </a>
             </div>
             <!----------------------- VITESSE ------------------------>
-            <div class="card text-white bg-danger m-3 conversionType vitesse">
-                <a href="./vitesse.html">
-                    <div class="card-header text-center">Vitesse</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_vitesse.png" alt="vitesse" />
-                        </div>
+            <div class="card text-white bg-danger m-3 active conversionType vitesse">
+                <div class="card-header text-center">Vitesse</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_vitesse.png" alt="vitesse" />
                     </div>
-                </a>
+                </div>
             </div>
             <!------------------------ TEMPS ------------------------->
             <div class="card text-white bg-warning m-3 conversionType temps">
@@ -166,27 +171,21 @@
                 <div>
                     <label for="unitBaseSelect" class="form-label mt-3">De :</label>
                     <select class="form-select" id="unitBaseSelect">
-                        <option value="kilometreCarre">Kilomètre carré (km²)</option>
-                        <option value="metreCarre">Mètre carré (m²)</option>
-                        <option value="milleCarre">Mille carré (mille²)</option>
-                        <option value="piedCarre">Pied carré (ft²)</option>
-                        <option value="pouceCarre">Pouce carré (in²)</option>
-                        <option value="vergeCarre">Verge carré (yd²)</option>
-                        <option value="hectare">Hectare (ha)</option>
-                        <option value="acre">Acre</option>
+                        <option value="kilomètreHeure">Kilomètre par heure (kmph)</option>
+                        <option value="metreSeconde">Mètre par seconde (mps)</option>
+                        <option value="milleHeure">Mille par heure (mph)</option>
+                        <option value="knot">Noeud (knot)</option>
+                        <option value="piedSeconde">Pied par seconde (pps)</option>
                     </select>
                 </div>
                 <div>
                     <label for="unitConvSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
-                        <option value="kilometreCarre">Kilomètre carré (km²)</option>
-                        <option value="metreCarre">Mètre carré (m²)</option>
-                        <option value="milleCarre">Mille carré (mille²)</option>
-                        <option value="piedCarre">Pied carré (ft²)</option>
-                        <option value="pouceCarre">Pouce carré (in²)</option>
-                        <option value="vergeCarre">Verge carré (yd²)</option>
-                        <option value="hectare">Hectare (ha)</option>
-                        <option value="acre">Acre</option>
+                        <option value="kilomètreHeure">Kilomètre par heure (kmph)</option>
+                        <option value="metreSeconde">Mètre par seconde (mps)</option>
+                        <option value="milleHeure">Mille par heure (mph)</option>
+                        <option value="knot">Noeud (knot)</option>
+                        <option value="piedSeconde">Pied par seconde (pps)</option>
                     </select>
                 </div>
             </div>

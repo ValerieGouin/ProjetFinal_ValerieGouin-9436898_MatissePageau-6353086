@@ -14,10 +14,15 @@
 <body>
     <div class="header">
         <picture>
-            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_volume_mobile.png" />
-            <source media="(min-width: 800px)" srcset="./images/image_entete_volume.png" />
-            <img class="headerImage" src="./images/image_entete_volume.png" alt="Convertisseur de volumes" />
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_distance_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_distance.png" />
+            <img class="headerImage" src="./images/image_entete_distance.png" alt="Convertisseur de distances" />
         </picture>
+        <div class="choixLangues">
+          FR            
+          <a href="../english/index.html">EN</a>
+          <a href="../espanol/index.html">ES</a>
+      </div>
     </div>
     <div class="mainSection mainPadding">
         <div class="typeCont">
@@ -33,15 +38,13 @@
                 </a>
             </div>
             <!----------------------- DISTANCE ------------------------>
-            <div class="card text-white bg-warning m-3 conversionType distance">
-                <a href="./distance.html">
-                    <div class="card-header text-center">Distance</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_distance.png" alt="distance" />
-                        </div>
+            <div class="card text-white bg-warning m-3 active conversionType distance">
+                <div class="card-header text-center">Distance</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_distance.png" alt="distance" />
                     </div>
-                </a>
+                </div>
             </div>
             <!---------------------- SURFACE ----------------------->
             <div class="card text-white bg-info m-3 conversionType surface">
@@ -66,13 +69,15 @@
                 </a>
             </div>
             <!------------------------ VOLUME ------------------------->
-            <div class="card text-white bg-warning m-3 active conversionType volume">
-                <div class="card-header text-center">Volume</div>
-                <div class="card-body">
-                    <div class="cardImage">
-                        <img class="image" src="./images/icone_volume.png" alt="volume" />
+            <div class="card text-white bg-warning m-3 conversionType volume">
+                <a href="./volume.html">
+                    <div class="card-header text-center">Volume</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_volume.png" alt="volume" />
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!----------------------- DONNÉES ------------------------>
             <div class="card text-white bg-info m-3 conversionType donnees">
@@ -166,29 +171,31 @@
                 <div>
                     <label for="unitBaseSelect" class="form-label mt-3">De :</label>
                     <select class="form-select" id="unitBaseSelect">
-                        <option value="metreCube">Mètre cube (m³)</option>
-                        <option value="litre">Litre (l)</option>
-                        <option value="millilitre">Millilitre (ml)</option>
-                        <option value="onceLiquideUK">Once liquide (UK) (uk fl oz)</option>
-                        <option value="onceLiquideUS">Once liquide (US) (us fl oz)</option>
-                        <option value="piedCube">Pied cube (ft³)</option>
-                        <option value="pouceCube">Pouce cube (po³)</option>
-                        <option value="gallonUK">Gallon (UK) (gallon uk gal)</option>
-                        <option value="gallonUS">Gallon (US) (gallon us gal)</option>
+                        <option value="kilometre">Kilomètre (km)</option>
+                        <option value="metre">Mètre (m)</option>
+                        <option value="decimetre">Décimètre (dm)</option>
+                        <option value="centimetre">Centimètre (cm)</option>
+                        <option value="millimetre">Millimètre (mm)</option>
+                        <option value="pied">Pied (ft)</option>
+                        <option value="pouce">Pouce (in)</option>
+                        <option value="verge">Verge (yd)</option>
+                        <option value="mille">Mille (mi)</option>
+                        <option value="milleMarin">Mille marin</option>
                     </select>
                 </div>
                 <div>
                     <label for="unitConvSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
-                        <option value="metreCube">Mètre cube (m³)</option>
-                        <option value="litre">Litre (l)</option>
-                        <option value="millilitre">Millilitre (ml)</option>
-                        <option value="onceLiquideUK">Once liquide (UK) (uk fl oz)</option>
-                        <option value="onceLiquideUS">Once liquide (US) (us fl oz)</option>
-                        <option value="piedCube">Pied cube (ft³)</option>
-                        <option value="pouceCube">Pouce cube (po³)</option>
-                        <option value="gallonUK">Gallon (UK) (gallon uk gal)</option>
-                        <option value="gallonUS">Gallon (US) (gallon us gal)</option>
+                        <option value="kilometre">Kilomètre (km)</option>
+                        <option value="metre">Mètre (m)</option>
+                        <option value="decimetre">Décimètre (dm)</option>
+                        <option value="centimetre">Centimètre (cm)</option>
+                        <option value="millimetre">Millimètre (mm)</option>
+                        <option value="pied">Pied (ft)</option>
+                        <option value="pouce">Pouce (in)</option>
+                        <option value="verge">Verge (yd)</option>
+                        <option value="mille">Mille (mi)</option>
+                        <option value="milleMarin">Mille marin</option>
                     </select>
                 </div>
             </div>

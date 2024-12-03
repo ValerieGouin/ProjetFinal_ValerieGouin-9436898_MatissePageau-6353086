@@ -14,21 +14,28 @@
 <body>
     <div class="header">
         <picture>
-            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_masse_mobile.png" />
-            <source media="(min-width: 800px)" srcset="./images/image_entete_masse.png" />
-            <img class="headerImage" src="./images/image_entete_masse.png" alt="Convertisseur de masses" />
+            <source media="(max-width: 799px)" srcset="./images/mobile/image_entete_energie_mobile.png" />
+            <source media="(min-width: 800px)" srcset="./images/image_entete_energie.png" />
+            <img class="headerImage" src="./images/image_entete_energie.png" alt="Convertisseur de d'énergies" />
         </picture>
+        <div class="choixLangues">
+          FR            
+          <a href="../english/index.html">EN</a>
+          <a href="../espanol/index.html">ES</a>
+      </div>
     </div>
     <div class="mainSection mainPadding">
         <div class="typeCont">
             <!------------------------ MASSE ------------------------->
-            <div class="card text-white bg-success m-3 active conversionType masse">
-                <div class="card-header text-center">Masse</div>
-                <div class="card-body">
-                    <div class="cardImage">
-                        <img class="image" src="./images/icone_masse.png" alt="masse" />
+            <div class="card text-white bg-success m-3 conversionType masse">
+                <a href="./masse.html">
+                    <div class="card-header text-center">Masse</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="./images/icone_masse.png" alt="masse" />
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!----------------------- DISTANCE ------------------------>
             <div class="card text-white bg-warning m-3 conversionType distance">
@@ -130,15 +137,13 @@
                 </a>
             </div>
             <!---------------------- ÉNERGIE ----------------------->
-            <div class="card text-white bg-warning m-3 conversionType energie">
-                <a href="./energie.html">
-                    <div class="card-header text-center">Énergie</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="./images/icone_energie.png" alt="energie" />
-                        </div>
+            <div class="card text-white bg-warning m-3 active conversionType energie">
+                <div class="card-header text-center">Énergie</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="./images/icone_energie.png" alt="energie" />
                     </div>
-                </a>
+                </div>
             </div>
             <!---------------------- DEVISE ----------------------->
             <div class="card text-white bg-danger m-3 conversionType devise">
@@ -166,31 +171,29 @@
                 <div>
                     <label for="unitBaseSelect" class="form-label mt-3">De :</label>
                     <select class="form-select" id="unitBaseSelect">
-                        <option value="kilogramme">Kilogramme (kg)</option>
-                        <option value="gramme">Gramme (g)</option>
-                        <option value="milligramme">Milligramme (mg)</option>
-                        <option value="microgramme">Microgramme (µg)</option>
-                        <option value="livre">Livre (lb)</option>
-                        <option value="once">Once (oz)</option>
-                        <option value="tonne">Tonne (t)</option>
-                        <option value="tonneLongue">Tonne longue (uk) (ton)</option>
-                        <option value="tonneCourte">Tonne courte (us) (ton)</option>
-                        <option value="stone">Stone (uk) (st)</option>
+                        <option value="joule">Joule (J)</option>
+                        <option value="kilojoule">Kilojoule (KJ)</option>
+                        <option value="calorie">Calorie (cal)</option>
+                        <option value="kilocalorie">Kilocalorie (kcal)</option>
+                        <option value="wattHeure">Watt-heure (Wh)</option>
+                        <option value="kilowattHeure">Kilowatt-heure (kWh)</option>
+                        <option value="btu">British thermal unit (BTU)</option>
+                        <option value="thermAmericain">Therm américain (thm)</option>
+                        <option value="piedLivre">Pied-livre (ft-lb)</option>
                     </select>
                 </div>
                 <div>
                     <label for="unitConvSelect" class="form-label mt-3">À :</label>
                     <select class="form-select" id="unitConvSelect">
-                        <option value="kilogramme">Kilogramme (kg)</option>
-                        <option value="gramme">Gramme (g)</option>
-                        <option value="milligramme">Milligramme (mg)</option>
-                        <option value="microgramme">Microgramme (µg)</option>
-                        <option value="livre">Livre (lb)</option>
-                        <option value="once">Once (oz)</option>
-                        <option value="tonne">Tonne (t)</option>
-                        <option value="tonneLongue">Tonne longue (uk) (ton)</option>
-                        <option value="tonneCourte">Tonne courte (us) (ton)</option>
-                        <option value="stone">Stone (uk) (st)</option>
+                        <option value="joule">Joule (J)</option>
+                        <option value="kilojoule">Kilojoule (KJ)</option>
+                        <option value="calorie">Calorie (cal)</option>
+                        <option value="kilocalorie">Kilocalorie (kcal)</option>
+                        <option value="wattHeure">Watt-heure (Wh)</option>
+                        <option value="kilowattHeure">Kilowatt-heure (kWh)</option>
+                        <option value="btu">British thermal unit (BTU)</option>
+                        <option value="thermAmericain">Therm américain (thm)</option>
+                        <option value="piedLivre">Pied-livre (ft-lb)</option>
                     </select>
                 </div>
             </div>
