@@ -14,9 +14,9 @@
 <body>
     <div class="header">
         <picture>
-            <source media="(max-width: 799px)" srcset="../images/mobile/image_entete_donnees_mobile_en.png" />
-            <source media="(min-width: 800px)" srcset="../images/image_entete_donnees_en.png" />
-            <img class="headerImage" src="../images/image_entete_donnees_en.png" alt="Data converter" />
+            <source media="(max-width: 799px)" srcset="../images/mobile/image_entete_temperature_mobile_en.png" />
+            <source media="(min-width: 800px)" srcset="../images/image_entete_temperature_en.png" />
+            <img class="headerImage" src="../images/image_entete_temperature_en.png" alt="Temperature converter" />
         </picture>
         <div class="choixLangues">
             <a href="../francais/index.html">FR</a>
@@ -60,15 +60,13 @@
                 </a>
             </div>
             <!---------------------- TEMPERATURE ----------------------->
-            <div class="card text-white bg-danger m-3 conversionType temperature">
-                <a href="../english/temperature.html">
-                    <div class="card-header text-center">Temperature</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="../images/icone_temperature.png" alt="temperature converter" />
-                        </div>
+            <div class="card text-white bg-danger m-3 active conversionType temperature">
+                <div class="card-header text-center">Temperature</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="../images/icone_temperature.png" alt="temperature converter" />
                     </div>
-                </a>
+                </div>
             </div>
             <!----------------------- SPEED ------------------------>
             <div class="card text-white bg-danger m-3 conversionType vitesse">
@@ -93,13 +91,15 @@
                 </a>
             </div>
             <!----------------------- DATA ------------------------>
-            <div class="card text-white bg-info m-3 active conversionType donnees">
-                <div class="card-header text-center">Data</div>
-                <div class="card-body">
-                    <div class="cardImage">
-                        <img class="image" src="../images/icone_donnees.png" alt="Data converter" />
+            <div class="card text-white bg-info m-3 conversionType donnees">
+                <a href="../english/data.html">
+                    <div class="card-header text-center">Data</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="../images/icone_donnees.png" alt="Data converter" />
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!------------------------ TIME ------------------------->
             <div class="card text-white bg-warning m-3 conversionType temps">
@@ -157,51 +157,37 @@
                 </a>
             </div>
         </div>
-
-    <!---------------------- CONVERTISSEUR ----------------------->
-    <div class="conversionCont">
-        <div class="valueField">
-            <label class="col-form-label mt-2" for="valueOutput">Result :</label>
-            <input type="text" class="form-control" readonly id="valueOutput">
-        </div>
-        <div class="valueField">
-            <label class="col-form-label mt-4" for="valueInput">Value to convert :</label>
-            <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
-        </div>
-        <div class="mb-5 units">
-            <div>
-                <label for="unitBaseSelect" class="form-label mt-3">From :</label>
-                <select class="form-select" id="unitBaseSelect">
-                    <option value="bit">Bit (b)</option>
-                    <option value="octet">Octet (O)</option>
-                    <option value="kilooctet">Kilooctet (Ko)</option>
-                    <option value="megaoctet">Megaoctet (Mo)</option>
-                    <option value="gigaoctet">Gigaoctet (Go)</option>
-                    <option value="terraoctet">Teraoctet (To)</option>
-                    <option value="petaoctet">Petaoctet (Po)</option>
-                    <option value="exaoctet">Exaoctet (Eo)</option>
-                    <option value="zettaoctet">Zettaoctet (Zo)</option>
-                    <option value="yottaoctet">Yottaoctet (Yo)</option>
-                </select>
+        <!---------------------- CONVERTISSEUR ----------------------->
+        <div class="conversionCont">
+            <div class="valueField">
+                <label class="col-form-label mt-2" for="valueOutput">Result :</label>
+                <input type="text" class="form-control" readonly id="valueOutput">
             </div>
-            <div>
-                <label for="unitConvSelect" class="form-label mt-3">To :</label>
-                <select class="form-select" id="unitConvSelect">
-                    <option value="bit">Bit (b)</option>
-                    <option value="octet">Octet (O)</option>
-                    <option value="kilooctet">Kilooctet (Ko)</option>
-                    <option value="megaoctet">Megaoctet (Mo)</option>
-                    <option value="gigaoctet">Gigaoctet (Go)</option>
-                    <option value="terraoctet">Teraoctet (To)</option>
-                    <option value="petaoctet">Petaoctet (Po)</option>
-                    <option value="exaoctet">Exaoctet (Eo)</option>
-                    <option value="zettaoctet">Zettaoctet (Zo)</option>
-                    <option value="yottaoctet">Yottaoctet (Yo)</option>
-                </select>
+            <div class="valueField">
+                <label class="col-form-label mt-4" for="valueInput">Value to convert :</label>
+                <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
+            </div>
+            <div class="mb-5 units">
+                <div>
+                    <label for="unitBaseSelect" class="form-label mt-3">From :</label>
+                    <select class="form-select" id="unitBaseSelect">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                        <option value="kelvin">Rankine (R)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="unitConvSelect" class="form-label mt-3">To :</label>
+                    <select class="form-select" id="unitConvSelect">
+                        <option value="celsius">Celsius (°C)</option>
+                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                        <option value="kelvin">Kelvin (K)</option>
+                        <option value="kelvin">Rankine (R)</option>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <div class="footer">
         <p class="text-white">

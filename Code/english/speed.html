@@ -14,9 +14,9 @@
 <body>
     <div class="header">
         <picture>
-            <source media="(max-width: 799px)" srcset="../images/mobile/image_entete_donnees_mobile_en.png" />
-            <source media="(min-width: 800px)" srcset="../images/image_entete_donnees_en.png" />
-            <img class="headerImage" src="../images/image_entete_donnees_en.png" alt="Data converter" />
+            <source media="(max-width: 799px)" srcset="../images/mobile/image_entete_vitesse_mobile_en.png" />
+            <source media="(min-width: 800px)" srcset="../images/image_entete_vitesse_en.png" />
+            <img class="headerImage" src="../images/image_entete_vitesse_en.png" alt="Speed converter" />
         </picture>
         <div class="choixLangues">
             <a href="../francais/index.html">FR</a>
@@ -71,15 +71,13 @@
                 </a>
             </div>
             <!----------------------- SPEED ------------------------>
-            <div class="card text-white bg-danger m-3 conversionType vitesse">
-                <a href="../english/speed.html">
+            <div class="card text-white bg-danger m-3 active conversionType vitesse">
                     <div class="card-header text-center">Speed</div>
                     <div class="card-body">
                         <div class="cardImage">
                             <img class="image" src="../images/icone_vitesse.png" alt="Speed converter" />
                         </div>
                     </div>
-                </a>
             </div>
             <!------------------------ VOLUME ------------------------->
             <div class="card text-white bg-warning m-3 conversionType volume">
@@ -93,13 +91,15 @@
                 </a>
             </div>
             <!----------------------- DATA ------------------------>
-            <div class="card text-white bg-info m-3 active conversionType donnees">
-                <div class="card-header text-center">Data</div>
-                <div class="card-body">
-                    <div class="cardImage">
-                        <img class="image" src="../images/icone_donnees.png" alt="Data converter" />
+            <div class="card text-white bg-info m-3 conversionType donnees">
+                <a href="../english/data.html">
+                    <div class="card-header text-center">Data</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="../images/icone_donnees.png" alt="Data converter" />
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!------------------------ TIME ------------------------->
             <div class="card text-white bg-warning m-3 conversionType temps">
@@ -158,50 +158,39 @@
             </div>
         </div>
 
-    <!---------------------- CONVERTISSEUR ----------------------->
-    <div class="conversionCont">
-        <div class="valueField">
-            <label class="col-form-label mt-2" for="valueOutput">Result :</label>
-            <input type="text" class="form-control" readonly id="valueOutput">
-        </div>
-        <div class="valueField">
-            <label class="col-form-label mt-4" for="valueInput">Value to convert :</label>
-            <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
-        </div>
-        <div class="mb-5 units">
-            <div>
-                <label for="unitBaseSelect" class="form-label mt-3">From :</label>
-                <select class="form-select" id="unitBaseSelect">
-                    <option value="bit">Bit (b)</option>
-                    <option value="octet">Octet (O)</option>
-                    <option value="kilooctet">Kilooctet (Ko)</option>
-                    <option value="megaoctet">Megaoctet (Mo)</option>
-                    <option value="gigaoctet">Gigaoctet (Go)</option>
-                    <option value="terraoctet">Teraoctet (To)</option>
-                    <option value="petaoctet">Petaoctet (Po)</option>
-                    <option value="exaoctet">Exaoctet (Eo)</option>
-                    <option value="zettaoctet">Zettaoctet (Zo)</option>
-                    <option value="yottaoctet">Yottaoctet (Yo)</option>
-                </select>
+        <!---------------------- CONVERTISSEUR ----------------------->
+        <div class="conversionCont">
+            <div class="valueField">
+                <label class="col-form-label mt-2" for="valueOutput">Result :</label>
+                <input type="text" class="form-control" readonly id="valueOutput">
             </div>
-            <div>
-                <label for="unitConvSelect" class="form-label mt-3">To :</label>
-                <select class="form-select" id="unitConvSelect">
-                    <option value="bit">Bit (b)</option>
-                    <option value="octet">Octet (O)</option>
-                    <option value="kilooctet">Kilooctet (Ko)</option>
-                    <option value="megaoctet">Megaoctet (Mo)</option>
-                    <option value="gigaoctet">Gigaoctet (Go)</option>
-                    <option value="terraoctet">Teraoctet (To)</option>
-                    <option value="petaoctet">Petaoctet (Po)</option>
-                    <option value="exaoctet">Exaoctet (Eo)</option>
-                    <option value="zettaoctet">Zettaoctet (Zo)</option>
-                    <option value="yottaoctet">Yottaoctet (Yo)</option>
-                </select>
+            <div class="valueField">
+                <label class="col-form-label mt-4" for="valueInput">Value to convert :</label>
+                <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
+            </div>
+            <div class="mb-5 units">
+                <div>
+                    <label for="unitBaseSelect" class="form-label mt-3">From :</label>
+                    <select class="form-select" id="unitBaseSelect">
+                        <option value="kilomètreHeure">Kilomètre par heure (kmph)</option>
+                        <option value="metreSeconde">Mètre par seconde (mps)</option>
+                        <option value="milleHeure">Mille par heure (mph)</option>
+                        <option value="knot">Noeud (knot)</option>
+                        <option value="piedSeconde">Pied par seconde (pps)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="unitConvSelect" class="form-label mt-3">To :</label>
+                    <select class="form-select" id="unitConvSelect">
+                        <option value="kilomètreHeure">Kilomètre par heure (kmph)</option>
+                        <option value="metreSeconde">Mètre par seconde (mps)</option>
+                        <option value="milleHeure">Mille par heure (mph)</option>
+                        <option value="knot">Noeud (knot)</option>
+                        <option value="piedSeconde">Pied par seconde (pps)</option>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <div class="footer">
         <p class="text-white">
