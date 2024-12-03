@@ -56,9 +56,14 @@ body {
 
 .choixLangues {
     display: flex;
-    align-items: flex-end;
-    gap: 5px;
-    padding-left: 30px;
+    gap: 7px;
+    padding: 20px;
+    background-color: rgba(255, 174, 0, 0.897);
+    border: solid white 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: black;
 }
 
 .valueField {
