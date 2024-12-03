@@ -88,7 +88,9 @@ toUnits.addEventListener('change', (event) => {  //Event listener every time the
 })
 
 typeBoxs.forEach(type => {
-  if(type.innerText.toLowerCase() == "devise" && type.classList.contains("active")) {
+  console.log(type.classList);
+  
+  if(type.classList[6] == "devise" && type.classList.contains("active")) {
     fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_ZlSw71Qso6zhtxIQ5dBs2amW3ymuXEOiTQ5y1MD0&currencies=EUR%2CUSD%2CCAD%2CCHF%2CVND%2CJPY%2CCNY%2CGBP')
     .then(response => {
       if (!response.ok) {
