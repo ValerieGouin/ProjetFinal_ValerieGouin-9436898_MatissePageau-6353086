@@ -19,10 +19,10 @@
             <img class="headerImage" src="../images/image_entete_distance.png" alt="Convertisseur de distances" />
         </picture>
         <div class="choixLangues">
-          FR            
-          <a href="../english/distance.html">EN</a>
-          <a href="../espanol/distancia.html">ES</a>
-      </div>
+            FR
+            <a href="../english/distance.html">EN</a>
+            <a href="../espanol/distancia.html">ES</a>
+        </div>
     </div>
     <div class="mainSection mainPadding">
         <div class="typeCont">
@@ -68,6 +68,17 @@
                     </div>
                 </a>
             </div>
+            <!----------------------- VITESSE ------------------------>
+            <div class="card text-white bg-danger m-3 conversionType vitesse">
+                <a href="../francais/vitesse.html">
+                    <div class="card-header text-center">Vitesse</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="../images/icone_vitesse.png" alt="vitesse" />
+                        </div>
+                    </div>
+                </a>
+            </div>
             <!------------------------ VOLUME ------------------------->
             <div class="card text-white bg-warning m-3 conversionType volume">
                 <a href="../francais/volume.html">
@@ -90,17 +101,6 @@
                     </div>
                 </a>
             </div>
-            <!----------------------- VITESSE ------------------------>
-            <div class="card text-white bg-danger m-3 conversionType vitesse">
-                <a href="../francais/vitesse.html">
-                    <div class="card-header text-center">Vitesse</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="../images/icone_vitesse.png" alt="vitesse" />
-                        </div>
-                    </div>
-                </a>
-            </div>
             <!------------------------ TEMPS ------------------------->
             <div class="card text-white bg-warning m-3 conversionType temps">
                 <a href="../francais/temps.html">
@@ -112,7 +112,7 @@
                     </div>
                 </a>
             </div>
-            <!---------------------- FREQUENCE ----------------------->
+            <!---------------------- FRÉQUENCE ----------------------->
             <div class="card text-white bg-info m-3 conversionType frequence">
                 <a href="../francais/frequence.html">
                     <div class="card-header text-center">Fréquence</div>
@@ -165,7 +165,7 @@
             </div>
             <div class="valueField">
                 <label class="col-form-label mt-4" for="valueInput">Valeur à convertir :</label>
-                <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
+                <input type="number" class="form-control" id="valueInput">
             </div>
             <div class="mb-5 units">
                 <div>
@@ -207,7 +207,7 @@
             Copyright : VALÉRIE GOUIN et MATISSE PAGEAU @ 2024
         </p>
     </div>
+    <script type="module" src="../src/webScripts/interactions.js"></script>
 </body>
-<script type="module" src="../src/webScripts/interactions.js"></script>
 
 </html>

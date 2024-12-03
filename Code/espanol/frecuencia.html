@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="es">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
             <img class="headerImage" src="../images/image_entete_frequence_es.png" alt="Convertidor de frecuencia" />
         </picture>
         <div class="choixLangues">
-            <a href="../francais/frequence.html">FR</a>          
+            <a href="../francais/frequence.html">FR</a>
             <a href="../english/frequency.html">EN</a>
             ES
         </div>
@@ -70,11 +70,22 @@
                     </div>
                 </a>
             </div>
+            <!----------------------- VITESSE ------------------------>
+            <div class="card text-white bg-danger m-3 conversionType vitesse">
+                <a href="../espanol/velocidad.html">
+                    <div class="card-header text-center">Velocidad</div>
+                    <div class="card-body">
+                        <div class="cardImage">
+                            <img class="image" src="../images/icone_vitesse.png" alt="velocidad" />
+                        </div>
+                    </div>
+                </a>
+            </div>
             <!------------------------ VOLUME ------------------------->
             <div class="card text-white bg-warning m-3 conversionType volume">
                 <a href="../espanol/volumen.html">
                     <div class="card-header text-center">Volumen</div>
-                        <div class="card-body">
+                    <div class="card-body">
                         <div class="cardImage">
                             <img class="image" src="../images/icone_volume.png" alt="volumen" />
                         </div>
@@ -92,17 +103,6 @@
                     </div>
                 </a>
             </div>
-            <!----------------------- VITESSE ------------------------>
-            <div class="card text-white bg-danger m-3 conversionType vitesse">
-                <a href="../espanol/velocidad.html">
-                    <div class="card-header text-center">Velocidad</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="../images/icone_vitesse.png" alt="velocidad" />
-                        </div>
-                    </div>
-                </a>
-            </div>
             <!------------------------ TEMPS ------------------------->
             <div class="card text-white bg-warning m-3 conversionType temps">
                 <a href="../espanol/tiempo.html">
@@ -114,7 +114,7 @@
                     </div>
                 </a>
             </div>
-            <!---------------------- FREQUENCE ----------------------->
+            <!---------------------- FRÉQUENCE ----------------------->
             <div class="card text-white bg-info m-3 active conversionType frequence">
                 <div class="card-header text-center">Frecuencia</div>
                 <div class="card-body">
@@ -165,7 +165,7 @@
             </div>
             <div class="valueField">
                 <label class="col-form-label mt-4" for="valueInput">Valor a convertir :</label>
-                <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
+                <input type="number" class="form-control" id="valueInput">
             </div>
             <div class="mb-5 units">
                 <div>
@@ -195,7 +195,7 @@
             Copyright : VALÉRIE GOUIN Y MATISSE PAGEAU @ 2024
         </p>
     </div>
+    <script type="module" src="../src/webScripts/interactions.js"></script>
 </body>
-<script type="module" src="../src/webScripts/interactions.js"></script>
 
 </html>
