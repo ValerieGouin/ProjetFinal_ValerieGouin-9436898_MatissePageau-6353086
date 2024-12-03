@@ -54,6 +54,13 @@ body {
     flex-direction: column;
 }
 
+.choixLangues {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    padding-left: 30px;
+}
+
 .valueField {
     display: flex;
     align-items: flex-start;
