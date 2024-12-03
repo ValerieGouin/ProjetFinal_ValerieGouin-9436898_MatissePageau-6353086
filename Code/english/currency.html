@@ -14,9 +14,9 @@
 <body>
     <div class="header">
         <picture>
-            <source media="(max-width: 799px)" srcset="../images/mobile/image_entete_mobile_en.png" />
-            <source media="(min-width: 800px)" srcset="../images/image_entete_en.png" />
-            <img class="headerImage" src="../images/image_entete_en.png" alt="Measurement converter" />
+            <source media="(max-width: 799px)" srcset="../images/mobile/image_entete_devise_mobile_en.png" />
+            <source media="(min-width: 800px)" srcset="../images/image_entete_devise_en.png" />
+            <img class="headerImage" src="../images/image_entete_devise_en.png" alt="Currency converter" />
         </picture>
         <div class="choixLangues">
             <a href="../francais/index.html">FR</a>
@@ -65,7 +65,7 @@
                     <div class="card-header text-center">Temperature</div>
                     <div class="card-body">
                         <div class="cardImage">
-                            <img class="image" src="../images/icone_temperature.png" alt="temperature converter" />
+                            <img class="image" src="../images/icone_temperature.png" alt="Temperature converter" />
                         </div>
                     </div>
                 </a>
@@ -148,25 +148,62 @@
                 </a>
             </div>
             <!---------------------- CURRENCY ----------------------->
-            <div class="card text-white bg-danger m-3 conversionType devise">
-                <a href="../english/currency.html">
-                    <div class="card-header text-center">Currency</div>
-                    <div class="card-body">
-                        <div class="cardImage">
-                            <img class="image" src="../images/icone_devise.png" alt="Currency converter" />
-                        </div>
+            <div class="card text-white bg-danger m-3 active conversionType devise">
+                <div class="card-header text-center">Currency</div>
+                <div class="card-body">
+                    <div class="cardImage">
+                        <img class="image" src="../images/icone_devise.png" alt="Currency converter" />
                     </div>
-                </a>
+                </div>
+            </div>
+        </div>
+        <!---------------------- CONVERTISSEUR ----------------------->
+        <div class="conversionCont">
+            <div class="valueField">
+                <label class="col-form-label mt-2" for="valueOutput">Result :</label>
+                <input type="text" class="form-control" readonly id="valueOutput">
+            </div>
+            <div class="valueField">
+                <label class="col-form-label mt-4" for="valueInput">Value to convert :</label>
+                <input type="number" class="form-control" placeholder="Entrez une valeur" id="valueInput">
+            </div>
+            <div class="mb-5 units">
+                <div>
+                    <label for="unitBaseSelect" class="form-label mt-3">From :</label>
+                    <select class="form-select" id="unitBaseSelect">
+                        <option value="CAD">Dollar (Canada)</option>
+                        <option value="CNY">Renminbi (China)</option>
+                        <option value="USD">Dollar (US)</option>
+                        <option value="EUR">Euro (Europe)</option>
+                        <option value="JPY">Yen (Japan)</option>
+                        <option value="livreSterling">Pound sterling (United Kingdom)</option>
+                        <option value="CHF">Franc (Swiss)</option>
+                        <option value="VND">Dong (Vietnam)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="unitConvSelect" class="form-label mt-3">To :</label>
+                    <select class="form-select" id="unitConvSelect">
+                        <option value="CAD">Dollar (Canada)</option>
+                        <option value="CNY">Renminbi (China)</option>
+                        <option value="USD">Dollar (US)</option>
+                        <option value="EUR">Euro (Europe)</option>
+                        <option value="JPY">Yen (Japan)</option>
+                        <option value="livreSterling">Pound sterling (United Kingdom)</option>
+                        <option value="CHF">Franc (Suisse)</option>
+                        <option value="VND">Dong (Vietnam)</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>
     <div class="footer">
         <p class="text-white">
-            <img class="icon" src="../images/icone_copyright.png" />
+            <img class="icon" src="/Code/images/icone_copyright.png" />
             Copyright : VALÉRIE GOUIN & MATISSE PAGEAU @ 2024
         </p>
     </div>
-    <script type="module" src="../src/webScripts/interactions.js"></script>
 </body>
+<script type="module" src="../src/webScripts/interactions.js"></script>
 
 </html>
