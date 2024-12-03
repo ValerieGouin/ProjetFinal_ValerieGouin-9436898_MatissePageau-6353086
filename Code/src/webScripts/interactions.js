@@ -25,8 +25,9 @@ let value = 0
 function updateOutput () {  //Select what convertion to do based on the type desired
   typeBoxs.forEach(type => {
     if(type.classList.contains("active")) {
-      switch (type.classList) { //switch between the type of convertion
-        case "température":
+      
+      switch (type.classList[6]) { //switch between the type of convertion
+        case "temperature":
           editResult(new temperature().ConvertTemperature(value, fromUnitSelected, toUnitSelected))
           break;
         case "volume":
@@ -35,7 +36,7 @@ function updateOutput () {  //Select what convertion to do based on the type des
         case "distance":
           editResult(new distances().ConvertDistance(value, fromUnitSelected, toUnitSelected))
           break
-        case "données":
+        case "donnees":
           editResult(new donnees().ConvertDonnee(value, fromUnitSelected, toUnitSelected))
           break
         case "masse":
@@ -50,13 +51,13 @@ function updateOutput () {  //Select what convertion to do based on the type des
         case "temps":
           editResult(new time().ConvertTime(value, fromUnitSelected, toUnitSelected))
           break
-        case "fréquence":
+        case "frequence":
           editResult(new frequence().ConvertFrequence(value, fromUnitSelected, toUnitSelected))
           break
         case "pression":
           editResult(new pression().ConvertPressure(value, fromUnitSelected, toUnitSelected))
           break
-        case "énergie":
+        case "energie":
           editResult(new energy().ConvertEnergy(value, fromUnitSelected, toUnitSelected))
           break
         case "devise":
