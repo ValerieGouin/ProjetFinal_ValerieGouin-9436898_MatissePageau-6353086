@@ -12,6 +12,9 @@ class temperature {
       case "kelvin":
         result = value;
         break
+      case "rankine":
+        result = value * 5/9
+        break
       default:
         throw new Error("Unitée non supportée")
     }    
@@ -29,6 +32,9 @@ class temperature {
         break
       case "kelvin":
         result = value
+        break
+      case "rankine":
+        result = value * 1.8
         break
       default:
         throw new Error("Unitée non supportée");

@@ -25,7 +25,7 @@ let value = 0
 function updateOutput () {  //Select what convertion to do based on the type desired
   typeBoxs.forEach(type => {
     if(type.classList.contains("active")) {
-      switch (type.innerText.toLowerCase()) { //switch between the type of convertion
+      switch (type.classList) { //switch between the type of convertion
         case "température":
           editResult(new temperature().ConvertTemperature(value, fromUnitSelected, toUnitSelected))
           break;
