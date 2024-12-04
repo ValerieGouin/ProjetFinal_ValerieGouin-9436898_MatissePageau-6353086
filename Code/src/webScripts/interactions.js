@@ -16,7 +16,7 @@ const valueInput = document.getElementById('valueInput')        //The input valu
 const fromUnits = document.getElementById('unitBaseSelect')     //The base unit
 const toUnits = document.getElementById('unitConvSelect')       //The selected unit to convert to
 const resultBox = document.getElementById('valueOutput')        //The result box
-let deviseApi = {}
+let deviseApi = null
 
 let fromUnitSelected = fromUnits.options[fromUnits.selectedIndex].value
 let toUnitSelected = toUnits.options[toUnits.selectedIndex].value
@@ -61,7 +61,9 @@ function updateOutput () {  //Select what convertion to do based on the type des
           editResult(new energy().ConvertEnergy(value, fromUnitSelected, toUnitSelected))
           break
         case "devise":
-          editResult(new currency().ConvertCurrency(deviseApi, value, fromUnitSelected, toUnitSelected))
+          if(deviseApi != null) {
+            editResult(new currency().ConvertCurrency(deviseApi, value, fromUnitSelected, toUnitSelected))
+          }
           break
       }
     }
@@ -102,6 +104,9 @@ typeBoxs.forEach(type => {
     })
     .catch(error => {
       console.error('API Request Failed:', error);
+      resultBox.value = "*Too Many API Request*"
+      resultBox.style.color = "red"
+      resultBox.style.fontStyle = "italic"
     });
   }
 })
