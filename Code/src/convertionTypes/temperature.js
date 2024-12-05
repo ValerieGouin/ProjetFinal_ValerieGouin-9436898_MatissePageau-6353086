@@ -13,7 +13,7 @@ class temperature {
         result = value;
         break
       case "rankine":
-        result = value * 5/9
+        result = value * 5 / 9
         break
       default:
         throw new Error("Unitée non supportée")
@@ -22,6 +22,7 @@ class temperature {
   }
 
   Fromkelvin(value, toUnit) { //Convert Kelvin to the selected unit
+    console.log(toUnit)
     let result = 0;
     switch (toUnit) {
       case "celsius":
@@ -34,7 +35,7 @@ class temperature {
         result = value
         break
       case "rankine":
-        result = value * 1.8
+        result = value * (9 / 5)
         break
       default:
         throw new Error("Unitée non supportée");
@@ -42,7 +43,7 @@ class temperature {
     return result
   }
 
-  ConvertTemperature(value, fromUnit, toUnit) {
+  ConvertTemperature(value, fromUnit, toUnit) {  
     let kelvin = this.Tokelvin(value, fromUnit)
     return this.Fromkelvin(kelvin, toUnit)
   }
