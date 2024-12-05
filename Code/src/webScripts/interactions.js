@@ -115,6 +115,6 @@ function editResult(result) { //Change the value in the result box
   if(value == 0) {
     resultBox.value = ""
   }else{
-    resultBox.value = Math.round(parseFloat(result) * 100) / 100
+    resultBox.value = (Math.round(parseFloat(result) * 100) / 100).toFixed(2)
   }
 }
