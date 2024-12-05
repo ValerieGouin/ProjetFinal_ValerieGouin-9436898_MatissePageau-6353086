@@ -70,6 +70,10 @@ body {
     text-align: center;
 }
 
+.form-select {
+  width: 275px !important;
+}
+
 .valueField {
     display: flex;
     align-items: flex-start;
@@ -121,4 +125,9 @@ body {
     .conversionCont {
         padding: 10px;
     }
+
+    .form-select {
+      width: 150px !important;
+    }
+    
 }
