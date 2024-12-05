@@ -66,6 +66,10 @@ body {
     color: black;
 }
 
+.form-control {
+    text-align: right;
+}
+
 .valueField {
     display: flex;
     align-items: flex-start;
