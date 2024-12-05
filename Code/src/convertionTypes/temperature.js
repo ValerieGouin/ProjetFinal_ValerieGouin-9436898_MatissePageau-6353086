@@ -13,7 +13,7 @@ class temperature {
         result = value;
         break
       case "rankine":
-        result = value * 5 / 9
+        result = value * (5 / 9)
         break
       default:
         throw new Error("Unitée non supportée")

@@ -15,13 +15,13 @@ class superficie {
         result = value * 10000;
         break;
       case "pouceCarre":
-        result = value / 1550;
+        result = value / 1550.0031;
         break;
       case "vergeCarre":
-        result = value / 1.196;
+        result = value / 1.19599;
         break;
       case "piedCarre":
-        result = value / 10.7639;
+        result = value * 0.092903;
         break;
       case "acre":
         result = value * 4046.86266972;
@@ -48,13 +48,13 @@ class superficie {
         result = value / 10000;
         break;
       case "pouceCarre":
-        result = value * 1550;
+        result = value * 1550.0031;
         break;
       case "vergeCarre":
-        result = value * 1.196;
+        result = value * 1.19599;
         break;
       case "piedCarre":
-        result = value * 10.7639;
+        result = value / 0.092903;
         break;
       case "acre":
         result = value / 4046.86266972;
